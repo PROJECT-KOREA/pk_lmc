@@ -1,0 +1,155 @@
+﻿capital = 525 #South Korea - Seoul or Busan
+
+oob = "KOR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+set_research_slots = 4
+
+set_stability = 0.8
+
+set_war_support = 0.6
+
+set_fuel_ratio = 1.0
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	marines  = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		cruiser_submarines = 1
+	}
+	set_naval_oob = "KOR_1936_Naval"
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+	set_naval_oob = "KOR_1936_Naval_Legacy"
+}
+
+set_convoys = 30
+
+add_ideas = {
+KOR_victors_of_wwi
+KOR_anti_japan_military
+KOR_the_london_naval_treaty
+KOR_korean_bongchan_conflict
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 40
+	fascism = 30
+	communism = 20
+	neutrality = 10
+}
+
+create_country_leader = {
+	name = "Syngman Rhee"
+	desc = ""
+	picture = "gfx/leaders/KOR/Lee_Syng.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yi cheok"
+	desc = "POLITICS_YI_CHEOK_DESC"
+	picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Cheok.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kim Il-sung"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_Kim_Ilsung.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Lee bom sock"
+	desc = ""
+	picture = "gfx/leaders/KOR/bom_sock.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
