@@ -67,6 +67,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.25
 			}
 		}
+		
 		KOR_korean_bongchan_conflict = {
 			
 			allowed = {
@@ -87,7 +88,6 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}
-
-
+	}
 }
 

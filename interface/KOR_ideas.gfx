@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_KOR_korean_bongchan_conflict"
+		texturefile = "gfx/interface/ideas/idea_KOR_korean_bongchan_conflict.dds"
+	}
+}

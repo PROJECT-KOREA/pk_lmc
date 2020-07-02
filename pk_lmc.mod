@@ -1,4 +1,4 @@
-version="1.9.3"
+version="1.9.*"
 tags={
 	"Alternative History"
 	"Events"
@@ -7,4 +7,4 @@ tags={
 }
 name="PROJECT KOREA: THE LAND OF MORNING CALM"
 supported_version="1.9.3"
-path="C:/Users/user/Documents/Paradox Interactive/Hearts of Iron IV/mod/PK_LMC"
+path="C:/Users/AKABANE/Documents/Paradox Interactive/Hearts of Iron IV/mod/pk_lmc"
