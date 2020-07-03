@@ -8,14 +8,8 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	state_shintoism
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-
-	JAP_zaibatsus
-	JAP_duplicate_research_efforts
-	JAP_militarism
+	sour_loser
+	KOR_the_london_naval_treaty
 }
 
 609 = {
@@ -84,7 +78,7 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	add_ideas = MTG_naval_treaty_adherent
+	add_ideas =
 }
 
 set_technology = {
@@ -349,13 +343,13 @@ if = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 100
+	neutrality = 100
 }
 
 create_country_leader = {
@@ -363,11 +357,8 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1989.1.1"
-	ideology = fascism_ideology
+	ideology = despotism
 	traits = {
-		warrior_code
-		emperor_showa
-		imperial_sanction
 	}
 	id = 700 #Hirohito
 }

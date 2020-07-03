@@ -128,6 +128,9 @@ bookmarks = {
 			history = "KOR_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				KOR_victors_of_wwi
+				KOR_anti_japan_military
+				KOR_korean_bongchan_conflict
 			}	
 			focuses = {
 			}			
