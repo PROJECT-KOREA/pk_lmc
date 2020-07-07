@@ -88,6 +88,20 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}
+				
+		KOR_joungchuone= { 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.5
+			}
+		}
+
 	}
 }
 

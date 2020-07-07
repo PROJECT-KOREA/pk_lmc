@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_idea_KOR_korean_bongchan_conflict"
 		texturefile = "gfx/interface/ideas/idea_KOR_korean_bongchan_conflict.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_KOR_joungchuone"
+		texturefile = "gfx/interface/ideas/idea_KOR_empire_royal_family.dds"
+	}
 }

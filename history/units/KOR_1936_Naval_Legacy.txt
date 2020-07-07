@@ -77,33 +77,6 @@
 		    ship = { name = "IKN 해누리-016" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
 	    }
 	}
-	fleet = {
-		name = "대한제국 제3 함대"			
-		naval_base = 1150
-	    task_force = {
-		    name = "제3 전투전단"			
-		    location = 1150
-            ship = { name = "IKN 천왕봉" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 대조영" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 선운" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 팔공" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 무장" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 구례" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 장성" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 자산" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 청원" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
-		}
-		task_force = {
-		    name = "제3 잠수전단"			
-		    location = 1150
-			ship = { name = "IKN 잠-017" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 잠-018" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 잠-019" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 잠-020" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 잠-021" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
-		    ship = { name = "IKN 잠-022" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
-		}
-	}
 }
 
 instant_effect = {

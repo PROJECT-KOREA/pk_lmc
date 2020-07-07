@@ -1,0 +1,1514 @@
+focus_tree = {
+	id = korea
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KOR
+		}
+	}
+	default = no
+	focus = {
+		id = KOR_emperor_coronation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 45
+		y = 0
+			available = {
+					has_country_flag = KOR_d
+				}
+			completion_reward = {
+					add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = KOR_reform_empire
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_emperor_coronation
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = KOR_general_election
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_reform_empire
+		}
+		mutually_exclusive = {
+			focus = KOR_C45_move
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = KOR_kim_koo
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_general_election
+		}
+		mutually_exclusive = {
+			focus = KOR_syngmanlee
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = KOR_constitutional_monarchy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_kim_koo
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = KOR_imperial_allowance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_constitutional_monarchy
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = KOR_syngmanlee
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_general_election
+		}
+		mutually_exclusive = {
+			focus = KOR_kim_koo
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = KOR_form_national_assembly
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_syngmanlee
+			focus = KOR_kim_koo
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = KOR_election
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_form_national_assembly
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = KOR_legislation_authority
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_form_national_assembly
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = KOR_NA_build_finish
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_election
+		}
+		prerequisite = {
+			focus = KOR_legislation_authority
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = KOR_reform_NA
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_imperial_allowance
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = KOR_republic_only
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_syngmanlee
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = KOR_take_imperial_property
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_republic_only
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = KOR_form_president
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_take_imperial_property
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = KOR_god_save_our_country
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_reform_NA
+		}
+		prerequisite = {
+			focus = KOR_NA_build_finish
+		}
+		prerequisite = {
+			focus = KOR_form_president
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = KOR_C45_move
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_reform_empire
+		}
+		mutually_exclusive = {
+			focus = KOR_general_election
+			focus = KOR_march_hansong
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = KOR_pass_c45
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_C45_move
+		}
+		mutually_exclusive = {
+			focus = KOR_reject_c45
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = KOR_form_law
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_pass_c45
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = KOR_choose_pm
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_form_law
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = KOR_na_reform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_form_law
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = KOR_pm_and_emperor
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_na_reform
+		}
+		prerequisite = {
+			focus = KOR_choose_pm
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = KOR_reject_c45
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_C45_move
+		}
+		mutually_exclusive = {
+			focus = KOR_pass_c45
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = KOR_emperor_center
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_reject_c45
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = KOR_delete_na
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_emperor_center
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = KOR_move_emperor_law
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_emperor_center
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = KOR_emperor_first
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_delete_na
+		}
+		prerequisite = {
+			focus = KOR_move_emperor_law
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = KOR_god_save_the_emperor
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_emperor_first
+		}
+		prerequisite = {
+			focus = KOR_pm_and_emperor
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = KOR_march_hansong
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_reform_empire
+		}
+		mutually_exclusive = {
+			focus = KOR_C45_move
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = KOR_emperor_stay
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_march_hansong
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = KOR_remove_na
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_emperor_stay
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = KOR_Ermachtigungsgesetz
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_remove_na
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = KOR_lee_center
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_remove_na
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = KOR_lee_central
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_lee_center
+		}
+		prerequisite = {
+			focus = KOR_Ermachtigungsgesetz
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = KOR_kill_oppose
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_emperor_stay
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = KOR_kill_comme
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_kill_oppose
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = KOR_kill_democratic
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_kill_oppose
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = KOR_pax_koreanna
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_kill_democratic
+		}
+		prerequisite = {
+			focus = KOR_kill_comme
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = KOR_holy_korean_empire
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_lee_central
+		}
+		prerequisite = {
+			focus = KOR_pax_koreanna
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = KOR_5_year_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_emperor_coronation
+		}
+		x = 35
+		y = 1
+
+	}
+	focus = {
+		id = KOR_civil_Industry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_5_year_plan
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = KOR_urbanization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_civil_Industry
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = KOR_transversal_railway
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_civil_Industry
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = KOR_man_urbanization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_transversal_railway
+		}
+		prerequisite = {
+			focus = KOR_urbanization
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = KOR_science_Industry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_5_year_plan
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = KOR_agency_for_defense_development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_science_Industry
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = KOR_science_team
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_agency_for_defense_development
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = KOR_war_industry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_5_year_plan
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = KOR_fortress
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_war_industry
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = KOR_more_armory
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_fortress
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = KOR_ja_won
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_5_year_plan
+		}
+		x = 39
+		y = 2
+
+	}
+	focus = {
+		id = KOR_oil_fac
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_ja_won
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = KOR_iron_fac
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_ja_won
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = KOR_industrial_park
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_iron_fac
+		}
+		prerequisite = {
+			focus = KOR_oil_fac
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = KOR_miracle_of_han_river
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_industrial_park
+		}
+		prerequisite = {
+			focus = KOR_science_team
+		}
+		prerequisite = {
+			focus = KOR_man_urbanization
+		}
+		prerequisite = {
+			focus = KOR_more_armory
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = KOR_military_rev
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_emperor_coronation
+		}
+		x = 53
+		y = 1
+
+	}
+	focus = {
+		id = KOR_army_rev
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_military_rev
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = KOR_fire_central
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_army_rev
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = KOR_french_aid
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_fire_central
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = KOR_fire_first
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_fire_central
+		}
+		mutually_exclusive = {
+			focus = KOR_armour_first
+		}
+		x = 44
+		y = 4
+
+	}
+	focus = {
+		id = KOR_cannon_first
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_fire_first
+		}
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = KOR_build_armory
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_french_aid
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = KOR_armour_first
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_fire_central
+		}
+		mutually_exclusive = {
+			focus = KOR_fire_first
+		}
+		x = 46
+		y = 4
+
+	}
+	focus = {
+		id = KOR_experimental_tank
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_armour_first
+		}
+		x = 46
+		y = 5
+
+	}
+	focus = {
+		id = KOR_american_weapone
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_fire_central
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = KOR_chinese_weapone
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_american_weapone
+		}
+		x = 48
+		y = 5
+
+	}
+	focus = {
+		id = KOR_SK_defense_forces
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_experimental_tank
+			focus = KOR_cannon_first
+		}
+		prerequisite = {
+			focus = KOR_chinese_weapone
+		}
+		prerequisite = {
+			focus = KOR_build_armory
+		}
+		x = 45
+		y = 6
+
+	}
+	focus = {
+		id = KOR_navy_rev
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_military_rev
+		}
+		x = 53
+		y = 2
+
+	}
+	focus = {
+		id = KOR_improve_shipbuilding
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_navy_rev
+		}
+		x = 53
+		y = 3
+
+	}
+	focus = {
+		id = KOR_battleship_central
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_improve_shipbuilding
+		}
+		mutually_exclusive = {
+			focus = KOR_carrier_central
+		}
+		x = 52
+		y = 4
+
+	}
+	focus = {
+		id = KOR_carrier_central
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_improve_shipbuilding
+		}
+		mutually_exclusive = {
+			focus = KOR_battleship_central
+		}
+		x = 54
+		y = 4
+
+	}
+	focus = {
+		id = KOR_destroyer_build
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_carrier_central
+			focus = KOR_battleship_central
+		}
+		x = 53
+		y = 5
+
+	}
+	focus = {
+		id = KOR_focus_sub
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_battleship_central
+			focus = KOR_carrier_central
+		}
+		x = 51
+		y = 5
+
+	}
+	focus = {
+		id = KOR_cruiser_dev
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_carrier_central
+			focus = KOR_battleship_central
+		}
+		x = 55
+		y = 5
+
+	}
+	focus = {
+		id = KOR_korean_ocean_fleet
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_cruiser_dev
+		}
+		prerequisite = {
+			focus = KOR_destroyer_build
+		}
+		prerequisite = {
+			focus = KOR_focus_sub
+		}
+		x = 53
+		y = 6
+
+	}
+	focus = {
+		id = KOR_air_force_rev
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_military_rev
+		}
+		x = 60
+		y = 2
+
+	}
+	focus = {
+		id = KOR_focus_fighter
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_air_force_rev
+		}
+		mutually_exclusive = {
+			focus = KOR_bomber_focus
+		}
+		x = 58
+		y = 3
+
+	}
+	focus = {
+		id = KOR_detonator_focus
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_air_force_rev
+		}
+		mutually_exclusive = {
+			focus = KOR_bomber_focus
+		}
+		x = 62
+		y = 3
+
+	}
+	focus = {
+		id = KOR_bomber_focus
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_air_force_rev
+		}
+		mutually_exclusive = {
+			focus = KOR_focus_fighter
+			focus = KOR_detonator_focus
+		}
+		x = 60
+		y = 3
+
+	}
+	focus = {
+		id = KOR_pilot_training
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_detonator_focus
+			focus = KOR_bomber_focus
+			focus = KOR_focus_fighter
+		}
+		x = 59
+		y = 4
+
+	}
+	focus = {
+		id = KOR_pilot_school
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_pilot_training
+		}
+		x = 59
+		y = 5
+
+	}
+	focus = {
+		id = KOR_transport_build
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_detonator_focus
+			focus = KOR_bomber_focus
+			focus = KOR_focus_fighter
+		}
+		x = 61
+		y = 4
+
+	}
+	focus = {
+		id = KOR_paratrooper
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_transport_build
+		}
+		x = 61
+		y = 5
+
+	}
+	focus = {
+		id = KOR_we_protect_the_sky
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_paratrooper
+			focus = KOR_pilot_school
+		}
+		x = 60
+		y = 6
+
+	}
+	focus = {
+		id = KOR_intervention_ready
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_emperor_coronation
+		}
+		x = 77
+		y = 1
+
+	}
+	focus = {
+		id = KOR_appeasement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_intervention_ready
+		}
+		mutually_exclusive = {
+			focus = KOR_hard_line
+		}
+		x = 70
+		y = 2
+
+	}
+	focus = {
+		id = KOR_make_faction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_appeasement
+		}
+		mutually_exclusive = {
+			focus = KOR_join_allie
+		}
+		x = 69
+		y = 3
+
+	}
+	focus = {
+		id = KOR_join_allie
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_appeasement
+		}
+		mutually_exclusive = {
+			focus = KOR_make_faction
+		}
+		x = 71
+		y = 3
+
+	}
+	focus = {
+		id = KOR_re_intervention_europe
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_join_allie
+			focus = KOR_make_faction
+		}
+		x = 70
+		y = 4
+
+	}
+	focus = {
+		id = KOR_intervention_asia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_make_faction
+			focus = KOR_join_allie
+		}
+		x = 65
+		y = 4
+
+	}
+	focus = {
+		id = KOR_allie_jap
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_intervention_asia
+		}
+		x = 64
+		y = 5
+
+	}
+	focus = {
+		id = KOR_allie_chi
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_intervention_asia
+		}
+		x = 66
+		y = 5
+
+	}
+	focus = {
+		id = KOR_allie_eng
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_re_intervention_europe
+		}
+		x = 71
+		y = 5
+
+	}
+	focus = {
+		id = KOR_allie_france
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_re_intervention_europe
+		}
+		x = 69
+		y = 5
+
+	}
+	focus = {
+		id = KOR_peace_europe
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_allie_eng
+		}
+		prerequisite = {
+			focus = KOR_allie_france
+		}
+		x = 70
+		y = 6
+
+	}
+	focus = {
+		id = KOR_peace_asia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_allie_chi
+		}
+		prerequisite = {
+			focus = KOR_allie_jap
+		}
+		x = 65
+		y = 6
+
+	}
+	focus = {
+		id = KOR_intervention_america
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_join_allie
+			focus = KOR_make_faction
+		}
+		x = 75
+		y = 4
+
+	}
+	focus = {
+		id = KOR_american_allie
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_intervention_america
+		}
+		x = 75
+		y = 5
+
+	}
+	focus = {
+		id = KOR_peace_america
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_american_allie
+		}
+		x = 75
+		y = 6
+
+	}
+	focus = {
+		id = KOR_eternal_peace
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_peace_europe
+		}
+		prerequisite = {
+			focus = KOR_peace_asia
+		}
+		prerequisite = {
+			focus = KOR_peace_america
+		}
+		x = 70
+		y = 7
+
+	}
+	focus = {
+		id = KOR_hard_line
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_intervention_ready
+		}
+		mutually_exclusive = {
+			focus = KOR_appeasement
+		}
+		x = 84
+		y = 2
+
+	}
+	focus = {
+		id = KOR_korean_allie
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_hard_line
+		}
+		x = 84
+		y = 3
+
+	}
+	focus = {
+		id = KOR_attack_asia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_korean_allie
+		}
+		x = 79
+		y = 4
+
+	}
+	focus = {
+		id = KOR_attack_jap
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_asia
+		}
+		x = 78
+		y = 5
+
+	}
+	focus = {
+		id = KOR_attack_chi
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_asia
+		}
+		x = 80
+		y = 5
+
+	}
+	focus = {
+		id = KOR_attack_europe
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_korean_allie
+		}
+		x = 84
+		y = 4
+
+	}
+	focus = {
+		id = KOR_attack_fra
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_europe
+		}
+		x = 83
+		y = 5
+
+	}
+	focus = {
+		id = KOR_attack_allie
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_europe
+		}
+		x = 85
+		y = 5
+
+	}
+	focus = {
+		id = KOR_attack_ger
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_allie
+		}
+		prerequisite = {
+			focus = KOR_attack_fra
+		}
+		x = 84
+		y = 6
+
+	}
+	focus = {
+		id = KOR_unite_asia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_chi
+		}
+		prerequisite = {
+			focus = KOR_attack_jap
+		}
+		x = 79
+		y = 6
+
+	}
+	focus = {
+		id = KOR_man_problam
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_holy_korean_empire
+			focus = KOR_god_save_the_emperor
+			focus = KOR_god_save_our_country
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = KOR_strong
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_man_problam
+		}
+		mutually_exclusive = {
+			focus = KOR_soft
+		}
+		x = 15
+		y = 9
+
+	}
+	focus = {
+		id = KOR_soft
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_man_problam
+		}
+		mutually_exclusive = {
+			focus = KOR_strong
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = KOR_kill_resistance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_strong
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = KOR_nego_resistance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_soft
+		}
+		x = 20
+		y = 10
+
+	}
+	focus = {
+		id = KOR_accept_authority
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_strong
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = KOR_man_annex
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_soft
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = KOR_man_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_nego_resistance
+			focus = KOR_man_annex
+			focus = KOR_accept_authority
+			focus = KOR_kill_resistance
+		}
+		x = 17
+		y = 11
+
+	}
+	focus = {
+		id = KOR_attack_america
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_korean_allie
+		}
+		x = 89
+		y = 4
+
+	}
+	focus = {
+		id = KOR_attack_usa
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_foothold_mex
+		}
+		x = 89
+		y = 6
+
+	}
+	focus = {
+		id = KOR_foothold_mex
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_america
+		}
+		x = 89
+		y = 5
+
+	}
+	focus = {
+		id = KOR_time_to_reach_top
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_ger
+		}
+		prerequisite = {
+			focus = KOR_attack_usa
+		}
+		prerequisite = {
+			focus = KOR_unite_asia
+		}
+		x = 84
+		y = 7
+
+	}
+}

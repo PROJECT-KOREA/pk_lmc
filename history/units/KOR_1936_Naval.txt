@@ -81,34 +81,6 @@
 		    ship = { name = "IKN 잠-016" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "해누리급" } } }
 	    }
 	}
-	
-	fleet = {
-		name = "대한제국 제3 함대"			
-		naval_base = 1150
-	    task_force = {
-		    name = "제3 전투전단"			
-		    location = 1150
-            ship = { name = "IKN 천왕봉" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "광개토태왕급" } } }
-		    ship = { name = "IKN 대조영" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "권율급" } } }
-		    ship = { name = "IKN 선운" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
-		    ship = { name = "IKN 팔공" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
-		    ship = { name = "IKN 무장" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
-		    ship = { name = "IKN 구례" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
-		    ship = { name = "IKN 장성" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
-		    ship = { name = "IKN 자산" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
-		    ship = { name = "IKN 청원" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
-		}	
-		task_force = {
-		    name = "제3 잠수전단"			
-		    location = 1150
-		    ship = { name = "IKN 잠-017" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "해누리급" } } }
-		    ship = { name = "IKN 잠-018" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "해누리급" } } }
-		    ship = { name = "IKN 잠-019" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "해누리급" } } }
-		    ship = { name = "IKN 잠-020" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "해누리급" } } }
-		    ship = { name = "IKN 잠-021" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "해누리급" } } }
-		    ship = { name = "IKN 잠-022" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "해누리급" } } }
-		}
-	}
 }
 
 instant_effect = 

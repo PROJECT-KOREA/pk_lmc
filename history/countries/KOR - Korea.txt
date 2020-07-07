@@ -96,6 +96,7 @@ KOR_victors_of_wwi
 KOR_anti_japan_military
 KOR_the_london_naval_treaty
 KOR_korean_bongchan_conflict
+KOR_joungchuone
 }
 set_politics = {
 	ruling_party = neutrality
