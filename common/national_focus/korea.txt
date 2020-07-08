@@ -195,13 +195,12 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_reform_NA
+			focus = KOR_form_president
 		}
 		prerequisite = {
 			focus = KOR_NA_build_finish
 		}
-		prerequisite = {
-			focus = KOR_form_president
-		}
+
 		x = 8
 		y = 7
 
