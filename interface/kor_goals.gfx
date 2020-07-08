@@ -1,0 +1,38 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_focus_imperial_club"
+		texturefile = "gfx/interface/goals/focus_imperial_club.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_chunggun_aeguk"
+		texturefile = "gfx/interface/goals/focus_chunggun_aeguk.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_capitol"
+		texturefile = "gfx/interface/goals/focus_capitol.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kim_koo"
+		texturefile = "gfx/interface/goals/focus_kim_koo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_syngman_rhee"
+		texturefile = "gfx/interface/goals/focus_syngman_rhee.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_declare_empire"
+		texturefile = "gfx/interface/goals/focus_declare_empire.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_self_management"
+		texturefile = "gfx/interface/goals/focus_generic_self_management.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kpg"
+		texturefile = "gfx/interface/goals/focus_kpg.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_first_republic"
+		texturefile = "gfx/interface/goals/focus_first_republic.dds"
+	}

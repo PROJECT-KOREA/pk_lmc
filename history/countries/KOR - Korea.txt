@@ -7,6 +7,13 @@ set_technology = {
 	infantry_weapons = 1
 	mass_assault = 1
 }
+give_military_access = FRA
+
+diplomatic_relation = {
+    country = FRA
+    relation = docking_rights
+    active = yes
+}
 
 set_research_slots = 4
 

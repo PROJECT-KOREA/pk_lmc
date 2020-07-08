@@ -6,7 +6,7 @@ state = {
 	state_category = rural
 	
 	history = {
-		owner = KOR
+		owner = FRA
 		add_core_of = KOR
 		
 		buildings = {

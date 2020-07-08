@@ -35,7 +35,7 @@ country_event = {
 	id = korea.2
 	title = korea.2.t
 	desc = korea.2.d
-	picture = GFX_report_event_generic_riot
+	picture = GFX_imperial_fastival
 
 	fire_only_once = yes
 
