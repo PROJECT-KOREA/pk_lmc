@@ -101,6 +101,59 @@ ideas = {
 				political_power_cost = 0.5
 			}
 		}
+		
+		KOR_yi_kang= { 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = idea_KOR_yi_kang
+			
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		KOR_allow_imperial_allowance = {
+
+			picture = imperial_property
+			
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = 0.05
+			}
+		}
+		
+		KOR_not_allow_imperial_allowance = {
+			
+			picture = HOL_unemployment_subs_cut
+			
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = -0.05
+			}
+		}
+		KOR_reformed_na = {
+			
+			picture = idea_generic_constitutional_guarantee
+			
+			modifier = {
+				political_power_cost = 0.5
+			}
+		}
+		
+		KOR_reforming_na = {
+			
+			picture = idea_KOR_empire_royal_family
+			
+			modifier = {
+				political_power_cost = 0.5
+			}
+		}
+		
 
 	}
 }

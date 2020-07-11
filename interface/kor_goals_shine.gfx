@@ -2,10 +2,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_focus_imperial_club_shine"
-		texturefile = "gfx/interface/goals/GFX_focus_imperial_club.dds"
+		texturefile = "gfx/interface/goals/focus_imperial_club.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_imperial_club.dds"
+			animationmaskfile = "gfx/interface/goals/focus_imperial_club.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -18,7 +18,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_imperial_club.dds"
+			animationmaskfile = "gfx/interface/goals/focus_imperial_club.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -33,10 +33,10 @@ spriteTypes = {
 	}
   	SpriteType = {
 		name = "GFX_focus_chunggun_aeguk_shine"
-		texturefile = "gfx/interface/goals/GFX_focus_chunggun_aeguk.dds"
+		texturefile = "gfx/interface/goals/focus_chunggun_aeguk.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_chunggun_aeguk.dds"
+			animationmaskfile = "gfx/interface/goals/focus_chunggun_aeguk.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -49,7 +49,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_chunggun_aeguk.dds"
+			animationmaskfile = "gfx/interface/goals/focus_chunggun_aeguk.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -64,10 +64,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_capitol_shine"
-		texturefile = "gfx/interface/goals/GFX_focus_capitol.dds"
+		texturefile = "gfx/interface/goals/focus_capitol.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_capitol.dds"
+			animationmaskfile = "gfx/interface/goals/focus_capitol.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -80,7 +80,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_capitol.dds"
+			animationmaskfile = "gfx/interface/goals/focus_capitol.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -95,10 +95,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_kim_koo_shine"
-		texturefile = "gfx/interface/goals/GFX_focus_kim_koo.dds"
+		texturefile = "gfx/interface/goals/focus_kim_koo.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_kim_koo.dds"
+			animationmaskfile = "gfx/interface/goals/focus_kim_koo.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -111,7 +111,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_kim_koo.dds"
+			animationmaskfile = "gfx/interface/goals/focus_kim_koo.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -126,10 +126,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_syngman_rhee_shine"
-		texturefile = "gfx/interface/goals/GFX_focus_syngman_rhee.dds"
+		texturefile = "gfx/interface/goals/focus_syngman_rhee.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_syngman_rhee.dds"
+			animationmaskfile = "gfx/interface/goals/focus_syngman_rhee.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -142,7 +142,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_syngman_rhee.dds"
+			animationmaskfile = "gfx/interface/goals/focus_syngman_rhee.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -157,10 +157,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_declare_empire_shine"
-		texturefile = "gfx/interface/goals/GFX_focus_declare_empire.dds"
+		texturefile = "gfx/interface/goals/focus_declare_empire.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_declare_empire.dds"
+			animationmaskfile = "gfx/interface/goals/focus_declare_empire.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -173,7 +173,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_declare_empire.dds"
+			animationmaskfile = "gfx/interface/goals/focus_declare_empire.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -188,10 +188,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_generic_self_management_shine"
-		texturefile = "gfx/interface/goals/GFX_focus_generic_self_management.dds"
+		texturefile = "gfx/interface/goals/focus_generic_self_management.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_generic_self_management.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_self_management.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -204,7 +204,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_generic_self_management.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_self_management.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -219,10 +219,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_kpg_shine"
-		texturefile = "gfx/interface/goals/GFX_focus_kpg.dds"
+		texturefile = "gfx/interface/goals/focus_kpg.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_kpg.dds"
+			animationmaskfile = "gfx/interface/goals/focus_kpg.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -235,7 +235,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_kpg.dds"
+			animationmaskfile = "gfx/interface/goals/focus_kpg.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -250,10 +250,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_first_republic_shine"
-		texturefile = "gfx/interface/goals/GFX_focus_first_republic.dds"
+		texturefile = "gfx/interface/goals/focus_first_republic.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_first_republic.dds"
+			animationmaskfile = "gfx/interface/goals/focus_first_republic.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -266,7 +266,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_focus_first_republic.dds"
+			animationmaskfile = "gfx/interface/goals/focus_first_republic.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -279,3 +279,4 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+}

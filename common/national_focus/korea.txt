@@ -17,18 +17,18 @@ focus_tree = {
 			available = {
 					has_country_flag = KOR_d
 				}
-			completion_reward = {
-					add_political_power = 50
-				}
 
 	}
 	focus = {
 		id = KOR_reform_empire
 		icon = GFX_focus_chunggun_aeguk
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_emperor_coronation
 		}
+			completion_reward = {
+					add_political_power = 50
+				}
 		x = 17
 		y = 1
 
@@ -36,13 +36,18 @@ focus_tree = {
 	focus = {
 		id = KOR_general_election
 		icon = GFX_focus_capitol
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_reform_empire
 		}
 		mutually_exclusive = {
 			focus = KOR_C45_move
+			focus = KOR_march_hansong
 		}
+			completion_reward = {
+				country_event = korea.3
+		}
+		
 		x = 8
 		y = 2
 
@@ -50,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = KOR_kim_koo
 		icon = GFX_focus_kim_koo
-		cost = 10.00
+		cost = 0.00
 		prerequisite = {
 			focus = KOR_general_election
 		}
@@ -68,6 +73,9 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_kim_koo
 		}
+			completion_reward = {
+				country_event = korea.4
+				}
 		x = 5
 		y = 4
 
@@ -79,6 +87,12 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_constitutional_monarchy
 		}
+		
+		completion_reward = {
+			KOR = {
+				add_timed_idea = { idea = KOR_allow_imperial_allowance days = 180 }
+			}
+			}
 		x = 4
 		y = 5
 
@@ -86,7 +100,7 @@ focus_tree = {
 	focus = {
 		id = KOR_syngmanlee
 		icon = GFX_focus_syngman_rhee
-		cost = 10.00
+		cost = 0.00
 		prerequisite = {
 			focus = KOR_general_election
 		}
@@ -105,6 +119,14 @@ focus_tree = {
 			focus = KOR_syngmanlee
 			focus = KOR_kim_koo
 		}
+			completion_reward = {
+			KOR = {
+				swap_ideas = {
+					remove_idea = KOR_joungchuone
+					add_idea = KOR_reforming_na
+				}
+			}
+			}
 		x = 8
 		y = 4
 
@@ -116,6 +138,9 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_form_national_assembly
 		}
+			completion_reward = {
+				country_event = korea.6
+				}
 		x = 7
 		y = 5
 
@@ -152,6 +177,11 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_imperial_allowance
 		}
+			completion_reward = {
+			KOR = {
+				add_timed_idea = { idea = KOR_reformed_na days = 180 }
+			}
+			}
 		x = 4
 		y = 6
 
@@ -174,6 +204,11 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_republic_only
 		}
+			completion_reward = {
+			KOR = {
+				add_timed_idea = { idea = KOR_not_allow_imperial_allowance days = 180 }
+			}
+			}
 		x = 12
 		y = 5
 
@@ -365,6 +400,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = KOR_C45_move
+			focus = KOR_general_election
 		}
 		x = 25
 		y = 2

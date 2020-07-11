@@ -4522,5 +4522,6 @@ spriteTypes = {
 	spriteType = {
 		name = "KOR_korean_bongchan_conflict"
 		texturefile = "gfx/interface/ideas/idea_KOR_korean_bongchan_conflict.dds"
-	}
+	}	
+
 }

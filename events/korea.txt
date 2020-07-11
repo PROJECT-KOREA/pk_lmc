@@ -24,13 +24,16 @@ country_event = {
 	        picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
 	        expire = "1965.1.1"
 	        ideology = despotism
+			modifier = {
+				political_power_cost = 0.5
+			}
 	        traits = {
-	            #
+	            traits_yi_un
 	        }
         }
 	}
 }
-
+####영친왕 대관식####
 country_event = {
 	id = korea.2
 	title = korea.2.t
@@ -53,3 +56,120 @@ country_event = {
        
 		}
 	}
+	####선거####
+country_event = {
+	id = korea.3
+	title = korea.3.t
+	desc = korea.3.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = korea.3.a
+		complete_national_focus = KOR_kim_koo
+		create_country_leader = {
+	        name = "Kim Koo"
+	        desc = "POLITICS_kim_koo_DESC"
+	        picture = "gfx/leaders/KOR/Portrait_Kim_Koo.dds"
+	        expire = "1965.1.1"
+	        ideology = conservatism
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = KOR_Constitutional_Association
+				name = KOR_prime_minister_party
+			}
+			set_politics = { ruling_party = democratic }
+	        traits = {
+	            traits_kim_koo
+			
+	        }
+        }
+
+	option = {
+		name = korea.3.b
+		complete_national_focus = KOR_syngmanlee
+		create_country_leader = {
+	        name = "syngman rhee"
+	        desc = "POLITICS_syngman_rhee_DESC"
+	        picture = "gfx/leaders/KOR/Portrait_Syngman_Rhee.dds"
+	        expire = "1965.1.1"
+	        ideology = conservatism
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = KOR_Liberal_Party
+				name = KOR_president_party
+			}
+			set_politics = { ruling_party = democratic }
+	        traits = {
+	            traits_syngman_rhee
+	        }
+		
+		}
+}
+####의친왕 대관식####
+country_event = {
+	id = korea.4
+	title = korea.4.t
+	desc = korea.4.d
+	picture = GFX_report_event_american_hunger_march
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+		
+	option = {
+		name = korea.4.a
+		ai_chance = { factor = 100 }
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		add_ideas = { KOR_yi_kang }
+		add_stability = 0.05
+       
+		}
+	}
+	####불란서 항복####
+country_event = {
+	id = korea.5
+	title = korea.5.t
+	desc = korea.5.d
+	picture = GFX_report_event_german_parade_paris
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+
+	
+	option = {
+		name = korea.5.a
+		create_wargoal = {
+			type = annex_everything
+			target = ger
+}
+		
+	}
+	option = {
+		name = korea.5.b
+	}
+}
+	
+	####중추원 의원 선거####
+country_event = {
+	id = korea.6
+	title = korea.6.t
+	desc = korea.6.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+
+	
+	option = {
+		name = korea.6.a
+	}
+}

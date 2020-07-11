@@ -1,0 +1,6 @@
+leader_traits = {
+
+	traits_yi_un = {
+		random = no
+		political_power_cost = 0.5
+		}

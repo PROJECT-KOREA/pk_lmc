@@ -7,4 +7,24 @@ spriteTypes = {
 		name = "GFX_idea_KOR_joungchuone"
 		texturefile = "gfx/interface/ideas/idea_KOR_empire_royal_family.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_KOR_yi_kang"
+		texturefile = "gfx/interface/ideas/idea_KOR_yi_kang.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_allow_imperial_allowance"
+		texturefile = "gfx/interface/ideas/imperial_property.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_not_allow_imperial_allowance"
+		texturefile = "gfx/interface/ideas/HOL_unemployment_subs_cut.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reformed_na"
+		texturefile = "gfx/interface/ideas/idea_generic_constitutional_guarantee.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reforming_na"
+		texturefile = "gfx/interface/ideas/idea_KOR_empire_royal_family.dds"
+	}
 }
