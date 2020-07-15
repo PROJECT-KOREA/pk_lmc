@@ -19,7 +19,7 @@ country_event = {
 		name = korea.1.a
 		ai_chance = { factor = 100 }
 		create_country_leader = {
-	        name = "Yi Un"
+	        name = "지선황제 이은"
 	        desc = "POLITICS_YI_UN_DESC"
 	        picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
 	        expire = "1965.1.1"
@@ -71,7 +71,7 @@ country_event = {
 		name = korea.3.a
 		complete_national_focus = KOR_kim_koo
 		create_country_leader = {
-	        name = "Kim Koo"
+	        name = "백범 김구"
 	        desc = "POLITICS_kim_koo_DESC"
 	        picture = "gfx/leaders/KOR/Portrait_Kim_Koo.dds"
 	        expire = "1965.1.1"
@@ -83,17 +83,14 @@ country_event = {
 				name = KOR_prime_minister_party
 			}
 			set_politics = { ruling_party = democratic }
-	        traits = {
-	            traits_kim_koo
-			
-	        }
+	        traits = traits_kim_koo
         }
 
 	option = {
 		name = korea.3.b
 		complete_national_focus = KOR_syngmanlee
 		create_country_leader = {
-	        name = "syngman rhee"
+	        name = "우남 이승만"
 	        desc = "POLITICS_syngman_rhee_DESC"
 	        picture = "gfx/leaders/KOR/Portrait_Syngman_Rhee.dds"
 	        expire = "1965.1.1"
@@ -105,9 +102,7 @@ country_event = {
 				name = KOR_president_party
 			}
 			set_politics = { ruling_party = democratic }
-	        traits = {
-	            traits_syngman_rhee
-	        }
+	        traits = traits_syngman_rhee
 		
 		}
 }
@@ -173,3 +168,119 @@ country_event = {
 		name = korea.6.a
 	}
 }
+	####C45법안건####
+country_event = {
+	id = korea.7
+	title = korea.7.t
+	desc = korea.7.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+
+	
+	option = {
+		name = korea.7.a
+		complete_national_focus = KOR_pass_c45
+	}
+	
+	option = {
+		name = korea.7.b
+		complete_national_focus = KOR_reject_c45
+		}
+}
+	####공산권 문제####
+country_event = {
+	id = korea.8
+	title = korea.8.t
+	desc = korea.8.d
+	picture = GFX_report_event_aid_pact
+
+	fire_only_once = yes
+
+    trigger = {
+        tag = KOR
+        date > 1936.1.1
+	}	
+		
+	option = {
+		name = korea.8.a
+		ai_chance = { factor = 100 }
+		set_country_flag = KOR_a	
+	complete_national_focus = KOR_comme_problem
+       
+		}
+	option = {
+		name = korea.8.b
+		}
+	}
+	####독일식 입헌군주 총리 선출####
+country_event = {
+	id = korea.9
+	title = korea.9.t
+	desc = korea.9.d
+	picture = GFX_report_event_asian_politicians
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = korea.9.a
+		add_ideas = { KOR_syngman_rhee }
+		}
+	
+	option = {
+		name = korea.9.b
+		add_ideas = { KOR_phlip_jason }
+		}
+	}
+	####지선황제 이은 암살####
+country_event = {
+	id = korea.10
+	title = korea.10.t
+	desc = korea.10.d
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = kor_m
+		}
+
+	
+	option = {
+		name = korea.10.a
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+	        name = "상화황제 이강"
+	        desc = "POLITICS_YI_KANG_DESC"
+	        picture = "gfx/leaders/KOR/Yi_Kang.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+			modifier = {
+				political_power_cost = 0.5
+			}
+	        traits = {
+	            traits_yi_kang
+	        }
+        }
+			add_timed_idea = { idea = KOR_assassin_yi_un days = 365 }
+	}
+	}
+	####이범석 총리####
+country_event = {
+	id = korea.11
+	title = korea.11.t
+	desc = korea.11.d
+	picture = GFX_report_event_canada_patriation
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = korea.11.a
+		add_ideas = { KOR_Beomseok_lee }
+		}
+	
+	}
+		
+	

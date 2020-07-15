@@ -1,5 +1,4 @@
 spriteTypes = {
-
 	SpriteType = {
 		name = "GFX_focus_imperial_club"
 		texturefile = "gfx/interface/goals/focus_imperial_club.dds"
@@ -36,3 +35,40 @@ spriteTypes = {
 		name = "GFX_focus_first_republic"
 		texturefile = "gfx/interface/goals/focus_first_republic.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_democracy"
+		texturefile = "gfx/interface/goals/focus_democracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_guardian_of_asia"
+		texturefile = "gfx/interface/goals/focus_guardian_of_asia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_cpki"
+		texturefile = "gfx/interface/goals/focus_cpki.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_disband_sicana"
+		texturefile = "gfx/interface/goals/focus_disband_sicana.dds"
+	}
+	SpriteType = {
+		name = "GFX_DOM_The_Trial"
+		texturefile = "gfx/interface/goals/DOM_The_Trial.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_c45_pass"
+		texturefile = "gfx/interface/goals/focus_c45_pass.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_c45_reject"
+		texturefile = "gfx/interface/goals/focus_c45_reject.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_god_save_the_emperor"
+		texturefile = "gfx/interface/goals/focus_god_save_the_emperor.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_assembly_election"
+		texturefile = "gfx/interface/goals/focus_assembly_election.dds"
+	}
+}

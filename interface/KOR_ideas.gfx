@@ -27,4 +27,36 @@ spriteTypes = {
 		name = "GFX_idea_KOR_reforming_na"
 		texturefile = "gfx/interface/ideas/idea_KOR_empire_royal_family.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_KOR_prisident"
+		texturefile = "gfx/interface/ideas/advisor_syngman_rhee.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_god_save_korea"
+		texturefile = "gfx/interface/ideas/idea_independence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_formed_na"
+		texturefile = "gfx/interface/ideas/idea_KOR_empire_royal_family.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_phlip_jason"
+		texturefile = "gfx/interface/ideas/KOR_phlip_jason.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_KOR_syngman_rhee"
+		texturefile = "gfx/interface/ideas/advisor_syngman_rhee.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_control_na"
+		texturefile = "gfx/interface/ideas/idea_KOR_empire_royal_family.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Beomseok_lee"
+		texturefile = "gfx/interface/ideas/advisor_lee_beomseok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_god_save_our_emperor"
+		texturefile = "gfx/interface/ideas/idea_KOR_for_korea.dds"
+	}
 }

@@ -133,6 +133,9 @@ bookmarks = {
 				KOR_korean_bongchan_conflict
 			}	
 			focuses = {
+				KOR_god_save_our_country
+				KOR_god_save_the_emperor
+				KOR_pax_koreanna
 			}			
 		}
 		"SOV"={

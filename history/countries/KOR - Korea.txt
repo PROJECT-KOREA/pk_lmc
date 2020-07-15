@@ -119,7 +119,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Syngman Rhee"
+	name = "이승만"
 	desc = ""
 	picture = "gfx/leaders/KOR/Lee_Syng.dds"
 	expire = "1965.1.1"
@@ -130,7 +130,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Yi cheok"
+	name = "융희황제 이척"
 	desc = "POLITICS_YI_CHEOK_DESC"
 	picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Cheok.dds"
 	expire = "1965.1.1"
@@ -141,7 +141,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kim Il-sung"
+	name = "김일성"
 	desc = ""
 	picture = "gfx/leaders/KOR/Portrait_Kim_Ilsung.dds"
 	expire = "1965.1.1"
@@ -152,7 +152,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Lee bom sock"
+	name = "철기 이범석"
 	desc = ""
 	picture = "gfx/leaders/KOR/bom_sock.dds"
 	expire = "1965.1.1"

@@ -19,4 +19,14 @@ on_actions = {
             }
         }
     }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.8
+          days = 5
+                  }
+            }
+        }
+    }
 }

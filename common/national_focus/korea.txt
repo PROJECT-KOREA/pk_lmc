@@ -35,8 +35,8 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_general_election
-		icon = GFX_focus_capitol
-		cost = 5.00
+		icon = GFX_focus_assembly_election
+		cost = 1.00
 		prerequisite = {
 			focus = KOR_reform_empire
 		}
@@ -113,7 +113,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_form_national_assembly
-		icon = GFX_focus_first_republic
+		icon = GFX_focus_capitol
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_syngmanlee
@@ -133,7 +133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_election
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_form_national_assembly
@@ -147,18 +147,21 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_legislation_authority
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tripartite_pact
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_form_national_assembly
 		}
+			completion_reward = {
+				add_political_power = 100
+				}
 		x = 9
 		y = 5
 
 	}
 	focus = {
 		id = KOR_NA_build_finish
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cpki
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_election
@@ -166,10 +169,19 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_legislation_authority
 		}
+			completion_reward = {
+			KOR = {
+				swap_ideas = {
+					remove_idea = KOR_reforming_na
+					add_idea = KOR_formed_na
+				}
+				}
+				}
 		x = 8
 		y = 6
 
 	}
+	
 	focus = {
 		id = KOR_reform_NA
 		icon = GFX_focus_kpg
@@ -188,18 +200,21 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_republic_only
-		icon = GFX_goal_unknown
+		icon = GFX_focus_democracy
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_syngmanlee
 		}
+			completion_reward = {
+				add_political_power = 100
+				}
 		x = 11
 		y = 4
 
 	}
 	focus = {
 		id = KOR_take_imperial_property
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_handle_king
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_republic_only
@@ -215,18 +230,23 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_form_president
-		icon = GFX_goal_unknown
+		icon = GFX_focus_disband_sicana
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_take_imperial_property
 		}
+			completion_reward = {
+			KOR = {
+				add_timed_idea = { idea = KOR_prisident days = 180 }
+			}
+			}
 		x = 12
 		y = 6
 
 	}
 	focus = {
 		id = KOR_god_save_our_country
-		icon = GFX_goal_unknown
+		icon = GFX_focus_guardian_of_asia
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_reform_NA
@@ -235,6 +255,9 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_NA_build_finish
 		}
+			completion_reward = {
+				add_ideas = KOR_god_save_korea
+			}
 
 		x = 8
 		y = 7
@@ -242,8 +265,8 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_C45_move
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_DOM_The_Trial
+		cost = 1.00
 		prerequisite = {
 			focus = KOR_reform_empire
 		}
@@ -251,14 +274,17 @@ focus_tree = {
 			focus = KOR_general_election
 			focus = KOR_march_hansong
 		}
+			completion_reward = {
+				country_event = korea.7
+		}
 		x = 17
 		y = 2
 
 	}
 	focus = {
 		id = KOR_pass_c45
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_c45_pass
+		cost = 0.00
 		prerequisite = {
 			focus = KOR_C45_move
 		}
@@ -271,40 +297,54 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_form_law
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monarchy_2
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_pass_c45
 		}
 		x = 15
 		y = 4
+			completion_reward = {
+				add_ideas = KOR_constitutional_monarchy_law
+			}
 
 	}
 	focus = {
 		id = KOR_choose_pm
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_form_law
 		}
+			completion_reward = {
+				country_event = korea.9
+				}
 		x = 14
 		y = 5
 
 	}
 	focus = {
 		id = KOR_na_reform
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_royal_wedding
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_form_law
 		}
+		completion_reward = {
+			KOR = {
+				swap_ideas = {
+					remove_idea = KOR_joungchuone
+					add_idea = KOR_formed_na
+				}
+				}
+				}
 		x = 16
 		y = 5
 
 	}
 	focus = {
 		id = KOR_pm_and_emperor
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_orleans_restoration
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_na_reform
@@ -312,14 +352,20 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_choose_pm
 		}
+			completion_reward = {
+				add_political_power = 100
+				set_country_flag = KOR_m
+				remove_country_leader_trait = traits_yi_un
+				add_country_leader_trait = traits_yi_un1
+				}
 		x = 15
 		y = 6
 
 	}
 	focus = {
 		id = KOR_reject_c45
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_c45_reject
+		cost = 0.00
 		prerequisite = {
 			focus = KOR_C45_move
 		}
@@ -332,40 +378,70 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_emperor_center
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monarchy_1
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_reject_c45
 		}
+			completion_reward = {
+				set_politics = { ruling_party = fascism elections_allowed = no }
+				add_stability = 0.05
+				set_party_name = {
+				ideology = fascism
+				long_name = KOR_imperial_party
+				name = KOR_emperor_party
+				}
+			create_country_leader = {
+				name = "지선황제 이은"
+				desc = "POLITICS_emperor_Yi_un_desc"
+				picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				modifier = {
+				traits = traits_emperor_yi_un
+				}
+			
+			}
+			}	
 		x = 19
 		y = 4
-
 	}
 	focus = {
 		id = KOR_delete_na
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_fascist_threat
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_emperor_center
 		}
+			completion_reward = {
+			KOR = {
+				swap_ideas = {
+					remove_idea = KOR_joungchuone
+					add_idea = KOR_control_na
+				}
+				}
+				}
 		x = 18
 		y = 5
 
 	}
 	focus = {
 		id = KOR_move_emperor_law
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_emperor_center
 		}
+			completion_reward = {
+				country_event = korea.11
+				}
 		x = 20
 		y = 5
 
 	}
 	focus = {
 		id = KOR_emperor_first
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_god_save_the_king
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_delete_na
@@ -373,20 +449,33 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_move_emperor_law
 		}
+			completion_reward = {
+				add_popularity = {
+				ideology = communism
+				popularity = -0.5
+				}
+				add_popularity = {
+				ideology = democratic
+				popularity = -0.5
+				}
+				}
 		x = 19
 		y = 6
 
 	}
 	focus = {
 		id = KOR_god_save_the_emperor
-		icon = GFX_goal_unknown
+		icon = GFX_focus_god_save_the_emperor
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_emperor_first
-		}
-		prerequisite = {
 			focus = KOR_pm_and_emperor
 		}
+				completion_reward = {
+				add_ideas = KOR_god_save_our_emperor
+			}
+				
+		
 		x = 17
 		y = 7
 
@@ -394,7 +483,7 @@ focus_tree = {
 	focus = {
 		id = KOR_march_hansong
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 1.00
 		prerequisite = {
 			focus = KOR_reform_empire
 		}
@@ -499,7 +588,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_pax_koreanna
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_kill_democratic
@@ -1544,6 +1633,86 @@ focus_tree = {
 		}
 		x = 84
 		y = 7
+
+	}
+	focus = {
+		id = KOR_comme_problem
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		cost = 10.00
+		x = 30
+		y = 9
+				available = {
+					has_country_flag = KOR_a
+				}
+
+	}
+	focus = {
+		id = KOR_prepare_civilwar
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_comme_problem
+		}
+		x = 30
+		y = 10
+
+	}
+	focus = {
+		id = KOR_partizan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_prepare_civilwar
+		}
+		x = 29
+		y = 11
+
+	}
+	focus = {
+		id = KOR_aid_soviet
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_prepare_civilwar
+		}
+		x = 31
+		y = 11
+
+	}
+	focus = {
+		id = KOR_loyalty_comme
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_partizan
+		}
+		prerequisite = {
+			focus = KOR_aid_soviet
+		}
+		x = 30
+		y = 12
+
+	}
+	focus = {
+		id = KOR_start_the_civilwar
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_loyalty_comme
+		}
+		x = 30
+		y = 13
+
+	}
+	focus = {
+		id = KOR_end_civilwar
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_start_the_civilwar
+		}
+		x = 30
+		y = 14
 
 	}
 }

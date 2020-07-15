@@ -153,8 +153,85 @@ ideas = {
 				political_power_cost = 0.5
 			}
 		}
-		
-
+		KOR_formed_na = {
+			
+			picture = idea_KOR_empire_royal_family
+			
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		KOR_prisident = {
+			
+			picture = advisor_syngman_rhee
+			
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.01
+			}
+		}
+		KOR_god_save_korea = {
+			
+			picture = idea_independence
+			
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.01
+			}
+		}
+		KOR_constitutional_monarchy_law = {
+			
+			picture = sisu
+			
+			modifier = {
+				political_power_gain = 0.4
+				stability_factor = 0.02
+			}
+		}
+		KOR_syngman_rhee = {
+			
+			picture = advisor_syngman_rhee
+			
+			modifier = {
+				stability_factor = 0.01
+			}
+		}
+		KOR_phlip_jason = {
+			
+			picture = KOR_phlip_jason
+			
+			modifier = {
+				stability_factor = 0.01
+			}
+		}
+		KOR_assassin_yi_un = {
+			picture = ENG_the_war_to_end_all_wars
+			
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.40
 	}
 }
-
+		KOR_control_na = {
+			
+			picture = idea_KOR_empire_royal_family
+			
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		KOR_Beomseok_lee = {
+			
+			picture = advisor_lee_beomseok
+			
+			modifier = {
+				political_power_gain = 0.2
+			}
+		}
+		KOR_god_save_our_emperor = {
+			
+			picture = idea_KOR_for_korea
+			
+			modifier = {
+				political_power_gain = 0.2
+				war_support_factor = 0.2			}
