@@ -1,0 +1,35 @@
+﻿add_namespace = KOR_news
+
+	####한성진군 뉴우스####
+news_event = {
+	id = KOR_news.1
+	title = KOR_news.1.t
+	desc = KOR_news.1.desc
+	picture = GFX_news_event_003
+	 
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KOR_news.1.a
+		trigger = {
+			original_tag = KOR
+		}
+	}
+	option = {
+		name = KOR_news.1.b
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = wtt_news.65.b
+		trigger = { 
+			NOT = { 
+				original_tag = KOR
+				original_tag = JAP
+			}
+		}
+	}
+}

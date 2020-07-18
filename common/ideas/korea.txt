@@ -234,4 +234,37 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = 0.2
-				war_support_factor = 0.2			}
+				war_support_factor = 0.2	
+				}
+}
+		KOR_yi_un = {
+			picture = idea_KOR_lee_un
+			
+			modifier = {
+				stability_factor = 0.10
+	}
+}
+		KOR_no_na = {
+			picture = idea_KOR_empire_royal_family
+			
+			modifier = {
+				stability_factor = 0.1
+	}
+}
+		KOR_Ermachtigungsgesetz = {
+			picture = idea_hun_treaty_of_trianon
+			
+			modifier = {
+				political_power_gain = 0.2
+	}
+}
+		KOR_pax_koreanna = {
+			picture = idea_independence
+			
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.1
+	}
+}
+}
+political_advisor = {

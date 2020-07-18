@@ -59,4 +59,20 @@ spriteTypes = {
 		name = "GFX_idea_KOR_god_save_our_emperor"
 		texturefile = "gfx/interface/ideas/idea_KOR_for_korea.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_KOR_yi_un"
+		texturefile = "gfx/interface/ideas/idea_KOR_lee_un.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_no_na"
+		texturefile = "gfx/interface/ideas/idea_KOR_empire_royal_family.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Ermachtigungsgesetz"
+		texturefile = "gfx/interface/ideas/idea_hun_treaty_of_trianon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_pax_koreanna"
+		texturefile = "gfx/interface/ideas/idea_independence.dds"
+	}
 }

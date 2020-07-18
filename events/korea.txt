@@ -251,19 +251,17 @@ country_event = {
 		name = korea.10.a
 		ai_chance = { factor = 100 }
 		create_country_leader = {
-	        name = "상화황제 이강"
-	        desc = "POLITICS_YI_KANG_DESC"
-	        picture = "gfx/leaders/KOR/Yi_Kang.dds"
+	        name = "중추원 임시내각"
+	        desc = "POLITICS_JOUNGCHUWON_DESC"
+	        picture = "gfx/leaders/KOR/emperor1.dds"
 	        expire = "1965.1.1"
 	        ideology = despotism
-			modifier = {
-				political_power_cost = 0.5
-			}
 	        traits = {
-	            traits_yi_kang
+	            traits_joungchuwon
 	        }
         }
 			add_timed_idea = { idea = KOR_assassin_yi_un days = 365 }
+			        country_event = { id = korea.14 days = 20 }
 	}
 	}
 	####이범석 총리####
@@ -282,5 +280,142 @@ country_event = {
 		}
 	
 	}
-		
+	####LMC 스토리 설명####
+country_event = {
+	id = korea.12
+	title = korea.12.t
+	desc = korea.12.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
 	
+		
+	option = {
+		name = korea.12.a
+		country_event = { id = korea.13 }
+		}
+	
+	option = {
+		name = korea.12.b
+		}
+}
+	####LMC 스토리####
+country_event = {
+	id = korea.13
+	title = korea.13.t
+	desc = korea.13.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = korea.13.a
+
+		}
+		
+}
+	####정치적 혼란####
+country_event = {
+	id = korea.14
+	title = korea.14.t
+	desc = korea.14.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = korea.14.a
+		country_event = { id = korea.15 days = 20 }
+
+		}
+		
+}
+	####황제 선택 이벤트####
+country_event = {
+	id = korea.15
+	title = korea.15.t
+	desc = korea.15.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = korea.15.a
+		create_country_leader = {
+	        name = "상화황제 이강"
+	        desc = "POLITICS_emperor_yi_kang_DESC"
+	        picture = "gfx/leaders/KOR/Yi_Kang.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+			}
+			set_country_flag = KOR_b
+			
+        }
+
+	option = {
+		name = korea.15.b
+		create_country_leader = {
+	        name = "성명황제 이우"
+	        desc = "POLITICS_emperor_yi_wu_DESC"
+	        picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Wu.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+			}
+			set_country_flag = KOR_b
+		}
+	
+}
+	####중추원 방화사건####
+country_event = {
+	id = korea.16
+	title = korea.16.t
+	desc = korea.16.d
+	picture = GFX_report_event_chinese_soldiers_running
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = kor_k
+		}
+
+	
+	option = {
+		name = korea.16.a
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+				}
+		}
+}
+	####WOI 소설####
+country_event = {
+	id = korea.17
+	title = korea.17.t
+	desc = korea.17.d
+	picture = GFX_report_event_ast_transfer_singapore
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {
+		name = korea.17.a
+
+		}
+}
+	####DEA 활동사진####
+country_event = {
+	id = korea.18
+	title = korea.18.t
+	desc = korea.18.d
+	picture = GFX_report_event_albanian_partisans
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {
+		name = korea.18.a
+
+		}
+}

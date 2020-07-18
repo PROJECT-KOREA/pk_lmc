@@ -354,7 +354,6 @@ focus_tree = {
 		}
 			completion_reward = {
 				add_political_power = 100
-				set_country_flag = KOR_m
 				remove_country_leader_trait = traits_yi_un
 				add_country_leader_trait = traits_yi_un1
 				}
@@ -482,7 +481,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_march_hansong
-		icon = GFX_goal_unknown
+		icon = GFX_focus_knyc
 		cost = 1.00
 		prerequisite = {
 			focus = KOR_reform_empire
@@ -491,57 +490,79 @@ focus_tree = {
 			focus = KOR_C45_move
 			focus = KOR_general_election
 		}
+			completion_reward = {
+					news_event = { id = KOR_news.1 }
+					set_politics = { ruling_party = fascism elections_allowed = no }
+					set_country_flag = KOR_k
+			}
 		x = 25
 		y = 2
 
 	}
 	focus = {
 		id = KOR_emperor_stay
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_handle_king
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_march_hansong
 		}
+			completion_reward = {
+				add_ideas = KOR_yi_un
+			}
 		x = 25
 		y = 3
 
 	}
 	focus = {
 		id = KOR_remove_na
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_reichskommisariats
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_emperor_stay
 		}
+			completion_reward = {
+				KOR = {
+					swap_ideas = {
+					remove_idea = KOR_joungchuone
+					add_idea = KOR_no_na
+				}
+				}
+				}
 		x = 23
 		y = 4
 
 	}
 	focus = {
 		id = KOR_Ermachtigungsgesetz
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_remove_na
 		}
+			completion_reward = {
+				add_ideas = KOR_Ermachtigungsgesetz
+			}
 		x = 22
 		y = 5
 
 	}
 	focus = {
 		id = KOR_lee_center
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_remove_na
 		}
+				completion_reward = {
+					add_political_power = 50
+				}
 		x = 24
 		y = 5
 
 	}
 	focus = {
 		id = KOR_lee_central
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_support_fascism
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_lee_center
@@ -549,39 +570,65 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_Ermachtigungsgesetz
 		}
+				completion_reward = {
+					add_command_power = 20
+				}
+
 		x = 23
 		y = 6
 
 	}
 	focus = {
 		id = KOR_kill_oppose
-		icon = GFX_goal_unknown
+		icon = GFX_idea_generic_secret_police
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_emperor_stay
 		}
+			completion_reward = {
+				add_popularity = {
+				ideology = communism
+				popularity = -0.2
+				}
+				add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+				}
+				}
 		x = 27
 		y = 4
 
 	}
 	focus = {
 		id = KOR_kill_comme
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_war_with_comintern
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_kill_oppose
 		}
+			completion_reward = {
+				add_popularity = {
+				ideology = communism
+				popularity = -0.2
+				}
+				}
 		x = 26
 		y = 5
 
 	}
 	focus = {
 		id = KOR_kill_democratic
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_kill_oppose
 		}
+			completion_reward = {
+				add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+				}
+				}
 		x = 28
 		y = 5
 
@@ -596,19 +643,25 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_kill_comme
 		}
+			completion_reward = {
+				add_ideas = KOR_pax_koreanna
+			}
 		x = 27
 		y = 6
 
 	}
 	focus = {
 		id = KOR_holy_korean_empire
-		icon = GFX_goal_unknown
+		icon = GFX_goal_holy_korean_empire
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_lee_central
 		}
 		prerequisite = {
 			focus = KOR_pax_koreanna
+		}
+			completion_reward = {
+			set_cosmetic_tag = KOR_GREATER
 		}
 		x = 25
 		y = 7

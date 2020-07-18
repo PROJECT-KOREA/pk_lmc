@@ -29,4 +29,34 @@ on_actions = {
             }
         }
     }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.12
+          days = 0
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.17
+          days = 20
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.18
+          days = 30
+                  }
+            }
+        }
+    }
 }

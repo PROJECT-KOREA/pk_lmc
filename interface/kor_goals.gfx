@@ -71,4 +71,12 @@ spriteTypes = {
 		name = "GFX_focus_assembly_election"
 		texturefile = "gfx/interface/goals/focus_assembly_election.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_knyc"
+		texturefile = "gfx/interface/goals/focus_knyc.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_holy_korean_empire"
+		texturefile = "gfx/interface/goals/goal_holy_korean_empire.dds"
+	}
 }
