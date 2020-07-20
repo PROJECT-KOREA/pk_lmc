@@ -268,3 +268,115 @@ ideas = {
 }
 }
 political_advisor = {
+
+		KOR_advisor_yi_un = {
+			
+			picture =  advisor_KOR_yi_un.dds
+			
+            allowed = {
+                    original_tag = KOR
+                }
+            available = {
+                has_government = neutrality
+                }
+
+            traits = { traditionalist_theorist }
+            
+            }
+			
+		KOR_advisor_KOR_Beomseok_lee = {
+			
+			picture =  advisor_lee_beomseok.dds
+			
+            allowed = {
+                    original_tag = KOR
+                }
+            available = {
+                has_government = fascism
+                }
+
+            traits = { fascist_demagogue }
+            
+            }
+				
+		KOR_advisor_syngman_rhee = {
+			
+			picture =  advisor_syngman_rhee.dds
+			
+            allowed = {
+                    original_tag = KOR
+                }
+            available = {
+                has_government = democratic
+                }
+
+            traits = { backroom_backstabber }
+            
+            }
+		KOR_advisor_ryuh_woonhyung = {
+			
+			picture =  advisor_ryuh_woonhyung.dds
+			
+            allowed = {
+                    original_tag = KOR
+                }
+
+            traits = { popular_figurehead }
+            
+            }
+		KOR_advisor_kim_sung_su = {
+			
+			picture =  advisor_kim_ku_sik.dds
+			
+            allowed = {
+                    original_tag = KOR
+                }
+
+            traits = { editor }
+            
+            }
+		KOR_advisor_kim_koo = {
+			
+			picture =  advisor_kim_koo.dds
+			
+            allowed = {
+                    original_tag = KOR
+                }
+			available = {
+                has_government = democratic
+                }
+
+            traits = { democratic_reformer }
+            
+            }
+		KOR_advisor_guak_sang_hun = {
+			
+			picture =  advisor_guak_sang_hun.dds
+			
+            allowed = {
+                    original_tag = KOR
+                }
+            traits = { silent_workhorse }
+            
+            }
+		KOR_advisor_an_chang_ho = {
+			
+			picture =  advisor_an_chang_ho.dds
+			
+            allowed = {
+                    original_tag = KOR
+                }
+            traits = { captain_of_industry }
+            
+            }
+		KOR_advisor_yi_gun = {
+			
+			picture =  advisor_yi_gun.dds
+			
+            allowed = {
+                    original_tag = KOR
+                }
+            traits = { prince_of_terror }
+            
+            }
+}

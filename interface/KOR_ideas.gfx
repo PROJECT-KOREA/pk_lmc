@@ -75,4 +75,41 @@ spriteTypes = {
 		name = "GFX_idea_KOR_pax_koreanna"
 		texturefile = "gfx/interface/ideas/idea_independence.dds"
 	}
+	####정치조언가####
+	spriteType = {
+		name = "GFX_idea_KOR_advisor_yi_un"
+		texturefile = "gfx/interface/ideas/advisor_KOR_yi_un.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_advisor_KOR_Beomseok_lee"
+		texturefile = "gfx/interface/ideas/advisor_lee_beomseok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_advisor_syngman_rhee"
+		texturefile = "gfx/interface/ideas/advisor_syngman_rhee.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_advisor_ryuh_woonhyung"
+		texturefile = "gfx/interface/ideas/advisor_ryuh_woonhyung.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_advisor_kim_sung_su"
+		texturefile = "gfx/interface/ideas/advisor_kim_sung_su.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_advisor_kim_koo"
+		texturefile = "gfx/interface/ideas/advisor_kim_koo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_advisor_guak_sang_hun"
+		texturefile = "gfx/interface/ideas/advisor_guak_sang_hun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_advisor_an_chang_ho"
+		texturefile = "gfx/interface/ideas/advisor_an_chang_ho.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_advisor_yi_gun"
+		texturefile = "gfx/interface/ideas/advisor_yi_gun.dds"
+	}
 }

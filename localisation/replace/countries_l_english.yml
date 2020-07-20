@@ -3095,3 +3095,12 @@
  COR:0 "코르시카"
  COR_DEF:0 "코르시카"
  COR_ADJ:0 "코르시카"
+ ###############
+ GGJ_fascism:0 "한국령 일본"
+ GGJ_democratic:0 "한국령 일본"
+ GGJ_communism:0 "한국령 일본"
+ GGJ_neutrality:0 "한국령 일본"
+ RYU_neutrality:0 "류큐 왕국"
+ RYU_fascism:0 "류큐 제국"
+ RYU_democratic:0 "류큐 공화국"
+ RYU_communism:0 "류큐 사회주의 연합"

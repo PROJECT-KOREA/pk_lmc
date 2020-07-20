@@ -105,6 +105,10 @@ KOR_the_london_naval_treaty
 KOR_korean_bongchan_conflict
 KOR_joungchuone
 }
+	set_autonomy = {
+		target = GGJ
+		autonomous_state = autonomy_integrated_puppet
+	}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

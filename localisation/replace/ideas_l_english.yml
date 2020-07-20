@@ -1,4 +1,5 @@
 ﻿l_english:
+ ####국민정신####
  KOR_victors_of_wwi:0 "대전쟁의 승리자들"
  KOR_victors_of_wwi_desc:0 "우리는 대전쟁에서 이겼으며 국민들은 이것을 자랑스럽게 여깁니다"
  KOR_anti_japan_military:0 "반일주의"
@@ -45,3 +46,14 @@
  KOR_no_na_desc:0 "형식상 민주주의 유지를 위해 중추원의 권한이 없어졌습니다"
  KOR_Ermachtigungsgesetz:0 "전권 위임법"
  KOR_Ermachtigungsgesetz_desc:0 "독일에서 통과된 법과 같은 이 법은 이범석 총통각하에게 무한의 권력을 주는 법입니다" 
+ 
+ ####정치 조언가####
+ KOR_advisor_yi_un:0 "이은"
+ KOR_advisor_KOR_Beomseok_lee:0 "이범석"
+ KOR_advisor_syngman_rhee:0 "이승만"
+ KOR_advisor_ryuh_woonhyung:0 "여운형"
+ KOR_advisor_kim_sung_su:0 "김성수"
+ KOR_advisor_kim_koo:0 "김구"
+ KOR_advisor_guak_sang_hun:0 "곽상훈"
+ KOR_advisor_an_chang_ho:0 "안창호"
+ KOR_advisor_yi_gun:0 "이건"
