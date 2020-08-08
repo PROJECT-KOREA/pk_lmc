@@ -70,6 +70,7 @@ country_event = {
 	option = {
 		name = korea.3.a
 		complete_national_focus = KOR_kim_koo
+		
 		create_country_leader = {
 	        name = "백범 김구"
 	        desc = "POLITICS_kim_koo_DESC"
@@ -82,13 +83,14 @@ country_event = {
 				long_name = KOR_Constitutional_Association
 				name = KOR_prime_minister_party
 			}
-			set_politics = { ruling_party = democratic }
+			set_politics = { ruling_party = democratic elections_allowed = yes }
 	        traits = traits_kim_koo
         }
 
 	option = {
 		name = korea.3.b
 		complete_national_focus = KOR_syngmanlee
+		elections_allowed = yes
 		create_country_leader = {
 	        name = "우남 이승만"
 	        desc = "POLITICS_syngman_rhee_DESC"
@@ -101,7 +103,7 @@ country_event = {
 				long_name = KOR_Liberal_Party
 				name = KOR_president_party
 			}
-			set_politics = { ruling_party = democratic }
+			set_politics = { ruling_party = democratic elections_allowed = yes }
 	        traits = traits_syngman_rhee
 		
 		}
@@ -418,4 +420,33 @@ country_event = {
 		name = korea.18.a
 
 		}
+}
+
+####노부히토 국왕 옹립####
+country_event = {
+	id = government_general_japan.1
+	title = government_general_japan.1.t
+	desc = government_general_japan.1.d
+	picture = GFX_report_event_american_hunger_march
+
+	is_triggered_only = yes
+	fire_only_once = yes	
+	
+	option = {
+		name = government_general_japan.1.a
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+	        name = "국왕 노부히토"
+	        desc = ""
+	        picture = "gfx/leaders/GGJ/nobuhito.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+		}
+	 	set_party_name = {
+			ideology = neutrality
+			long_name = GGJ_japan_kings_party
+			name = GGJ_kings_party
+			}
+	}
+	
 }

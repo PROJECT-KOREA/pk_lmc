@@ -237,7 +237,7 @@ ideas = {
 				war_support_factor = 0.2	
 				}
 }
-		KOR_yi_un = {
+		KOR_yi_un1 = {
 			picture = idea_KOR_lee_un
 			
 			modifier = {
@@ -379,4 +379,488 @@ political_advisor = {
             traits = { prince_of_terror }
             
             }
+		KOR_advisor_yi_si_young = {
+			
+			picture =  advisor_yi_si_young.dds
+			
+            allowed = {
+                    original_tag = KOR
+                }
+            traits = { war_industrialist }
+            
+            }
+}
+    theorist = {
+	
+		KOR_ji_chung_chun = {
+
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	land_doctrine = 0.07
+		    }
+			
+		    traits = { military_theorist }
+	    }
+
+	    KOR_shin_sung_mo = {
+
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    research_bonus = {
+		    	naval_doctrine = 0.07
+		    }
+		
+		    traits = { naval_theorist }
+	    }
+
+	    KOR_no_baeg_lin = {
+			
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    research_bonus = {
+		    	air_doctrine = 0.07
+		    }
+		
+		    traits = { air_warfare_theorist }
+	    }
+		
+		KOR_lee_tae_gyu = {
+			
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+	    	research_bonus = {
+		    	rocketry = 0.10
+		    }
+		
+		    traits = { rocket_scientist }
+	    }
+
+        KOR_do_sang_log = {
+			
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	nuclear = 0.10
+		    }
+	    	
+	    	traits = { nuclear_scientist }
+	    }
+    }
+
+    high_command = {
+
+	    KOR_kim_won_bong = {
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { army_infantry_3 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+    	}
+
+	    KOR_choe_yong_duk = {
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { air_air_superiority_3 }
+		
+		    ai_will_do = {
+		    	factor = 1
+	    	}
+	    }
+
+	    KOR_son_won_il = {
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { navy_carrier_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }    
+	
+    	KOR_choi_sung_hak = {
+		
+	    	allowed = {
+	    		original_tag = KOR
+	    	}
+		
+	    	traits = { navy_screen_2 }
+		
+	    	ai_will_do = {
+	    		factor = 1
+	    	}
+	    }
+
+	    KOR_yu_dong_yeol = {
+		
+	    	allowed = {
+	    		original_tag = KOR
+	    	}
+		
+		    traits = { army_cavalry_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+
+	    KOR_kim_kyung_cheon = {
+		
+	    	allowed = {
+		    	original_tag = KOR
+	    	}
+		
+	    	traits = { army_armored_3 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+
+	    KOR_hong_sa_ik_2 = {
+		
+	    	allowed = {
+	    		original_tag = KOR
+	    	}
+		
+		    traits = { army_logistics_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+	
+	    KOR_kim_hong_il = {
+		
+	    	allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { army_artillery_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+	}		
+
+    army_chief = {
+	
+	    KOR_ji_cheong_cheon = {
+	    		
+	    	allowed = {
+	    		original_tag = KOR
+	    	}
+			
+	    	traits = { army_chief_defensive_2 }
+			
+	    	ai_will_do = {
+	    		factor = 1
+	    	}
+	    }
+		
+	    KOR_kim_chwa_chin = {
+	    		
+	    	allowed = {
+		    	original_tag = KOR
+		    }
+			
+	    	traits = { army_chief_drill_3 }
+			
+	    	ai_will_do = {
+		    	factor = 1
+	    	}
+	    }
+    
+	    KOR_lee_beom_seok = {
+			
+	    	allowed = {
+	    		original_tag = KOR
+	    	}
+			
+			available = {
+				NOT = { has_country_flag = KOR_lee_beom_seok_arrest }
+			}
+			
+	    	traits = { army_chief_organizational_2 }
+			
+	    	ai_will_do = {
+	    		factor = 1
+	    	}
+	    }
+
+	    KOR_kim_suk_won = {
+			
+		    allowed = {
+	    		original_tag = KOR
+		    }
+			
+	    	traits = { army_chief_offensive_2 }
+			
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+    }
+
+    navy_chief = {
+       
+	    KOR_sin_sun_sung = {
+			
+		    allowed = {
+		    	original_tag = KOR
+	    	}
+		    	
+		    traits = { navy_chief_decisive_battle_2 }
+			
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+    }
+
+    air_chief = {
+
+    	KOR_no_baek_rin = {
+			
+	    	allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    traits = { air_chief_ground_support_2 }
+			
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }                 
+    }
+
+    materiel_manufacturer = {
+			
+	    designer = yes
+			
+	    KOR_st = {
+
+	    	picture = KOR_st
+                        
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+	    		
+		    research_bonus = {
+		    	infantry_weapons = 0.20
+	    	}
+			
+		    traits = { infantry_equipment_manufacturer }
+	    }
+    }
+	
+    aircraft_manufacturer = {
+			
+	    designer = yes
+		
+	    KOR_kai_light = {
+					
+		    picture = KOR_kai
+				
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	air_equipment = 0.05
+		    }
+
+		    cost = 150
+			
+		    traits = { light_aircraft_manufacturer }
+	    }
+		
+		KOR_kai_medium = {
+					
+		    picture = KOR_kai
+				
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	air_equipment = 0.05
+		    }
+
+		    cost = 150
+			
+		    traits = { medium_aircraft_manufacturer }
+	    }
+		
+		KOR_kai_heavy = {
+					
+		    picture = KOR_kai
+				
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	air_equipment = 0.05
+		    }
+
+		    cost = 150
+			
+		    traits = { heavy_aircraft_manufacturer }
+	    }
+    }
+
+    industrial_concern = {
+
+	    KOR_posco = {
+
+		    picture = KOR_posco
+			
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+			
+		    research_bonus = {
+		    	industry = 0.10
+		    }
+			
+		    traits = { industrial_concern }
+	    }
+
+	    KOR_kepco = {
+					
+		    picture = KOR_kepco
+				
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	electronics = 0.10
+		    }
+
+		    cost = 150
+			
+		    traits = { electronics_developer }
+	    }
+    }
+
+    tank_manufacturer = {
+	    KOR_add_fast = {
+			
+		    picture = KOR_add
+
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+
+		    research_bonus = {
+		    	armor = 0.10
+		    }
+			
+		    traits = { fast_tank_manufacturer }
+	    }
+		
+		KOR_add_medium = {
+			
+		    picture = KOR_add
+
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+
+		    research_bonus = {
+		    	armor = 0.10
+		    }
+			
+		    traits = { medium_tank_manufacturer }
+	    }
+		
+		KOR_add_heavy = {
+			
+		    picture = KOR_add
+
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+
+		    research_bonus = {
+		    	armor = 0.10
+		    }
+			
+		    traits = { heavy_tank_manufacturer }
+	    }
+    }
+
+    naval_manufacturer = {
+		
+	    designer = yes
+		
+	    KOR_hyundai_pacific = {
+			
+		    picture = KOR_hyundai
+		
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+						
+		    research_bonus = {
+		    	naval_equipment = 0.10
+		    }
+			
+		    traits = { pacific_fleet_naval_manufacturer }
+    	}
+		
+		KOR_hyundai_coastal = {
+			
+		    picture = KOR_hyundai
+    
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+
+		    research_bonus = {
+		    	naval_equipment = 0.10
+		    }
+			
+		    traits = { coastal_defence_naval_manufacturer }
+	    }
+		
+	    KOR_hyundai_escort = {
+			
+		    picture = KOR_hyundai
+    
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+
+		    research_bonus = {
+		    	naval_equipment = 0.10
+		    }
+			
+		    traits = { convoy_escort_naval_manufacturer }
+	    }
+    }
 }

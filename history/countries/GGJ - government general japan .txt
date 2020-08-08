@@ -1,4 +1,4 @@
-﻿capital = 528
+﻿capital = 282
 
 OOB = "GGJ_1936"
 
@@ -27,4 +27,19 @@ create_country_leader = {
 	picture = "gfx/leaders/GGJ/JAP_yi_gun.dds"
 	expire = "1965.1.1"
 	ideology = despotism
+}
+
+####총독부 장군####
+create_field_marshal = {
+  name = "이건"
+  picture = "JAP_yi_gun.dds"
+  traits = { politically_connected
+			 cavalry_officer
+			 }
+  skill = 2
+
+  attack_skill = 6
+  defense_skill = 5
+  planning_skill = 3
+  logistics_skill = 5
 }

@@ -53,7 +53,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = KOR_kim_koo
+		id = KOR_kim_koo1
 		icon = GFX_focus_kim_koo
 		cost = 0.00
 		prerequisite = {
@@ -71,7 +71,7 @@ focus_tree = {
 		icon = GFX_focus_declare_empire
 		cost = 10.00
 		prerequisite = {
-			focus = KOR_kim_koo
+			focus = KOR_kim_koo1
 		}
 			completion_reward = {
 				country_event = korea.4
@@ -105,7 +105,7 @@ focus_tree = {
 			focus = KOR_general_election
 		}
 		mutually_exclusive = {
-			focus = KOR_kim_koo
+			focus = KOR_kim_koo1
 		}
 		x = 10
 		y = 3
@@ -117,7 +117,7 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_syngmanlee
-			focus = KOR_kim_koo
+			focus = KOR_kim_koo1
 		}
 			completion_reward = {
 			KOR = {
@@ -256,6 +256,7 @@ focus_tree = {
 			focus = KOR_NA_build_finish
 		}
 			completion_reward = {
+				remove_ideas = KOR_korean_bongchan_conflict
 				add_ideas = KOR_god_save_korea
 			}
 
@@ -356,6 +357,7 @@ focus_tree = {
 				add_political_power = 100
 				remove_country_leader_trait = traits_yi_un
 				add_country_leader_trait = traits_yi_un1
+				set_country_flag = KOR_m
 				}
 		x = 15
 		y = 6
@@ -471,6 +473,7 @@ focus_tree = {
 			focus = KOR_pm_and_emperor
 		}
 				completion_reward = {
+				remove_ideas = KOR_korean_bongchan_conflict
 				add_ideas = KOR_god_save_our_emperor
 			}
 				
@@ -507,7 +510,7 @@ focus_tree = {
 			focus = KOR_march_hansong
 		}
 			completion_reward = {
-				add_ideas = KOR_yi_un
+				add_ideas = KOR_yi_un1
 			}
 		x = 25
 		y = 3
@@ -654,13 +657,13 @@ focus_tree = {
 		id = KOR_holy_korean_empire
 		icon = GFX_goal_holy_korean_empire
 		cost = 10.00
-		prerequisite = {
-			focus = KOR_lee_central
-		}
+
 		prerequisite = {
 			focus = KOR_pax_koreanna
+			focus = KOR_lee_central
 		}
-			completion_reward = {
+		completion_reward = {
+			remove_ideas = KOR_korean_bongchan_conflict
 			set_cosmetic_tag = KOR_GREATER
 		}
 		x = 25
@@ -673,6 +676,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_emperor_coronation
+		}
+		available = {
+			always = no
 		}
 		x = 35
 		y = 1
@@ -864,6 +870,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_emperor_coronation
+		}
+		available = {
+			always = no
 		}
 		x = 53
 		y = 1
@@ -1126,6 +1135,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = KOR_bomber_focus
+			focus = KOR_detonator_focus
 		}
 		x = 58
 		y = 3
@@ -1140,6 +1150,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = KOR_bomber_focus
+			focus = KOR_focus_fighter
 		}
 		x = 62
 		y = 3
@@ -1221,474 +1232,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = KOR_intervention_ready
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_emperor_coronation
-		}
-		x = 77
-		y = 1
-
-	}
-	focus = {
-		id = KOR_appeasement
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_intervention_ready
-		}
-		mutually_exclusive = {
-			focus = KOR_hard_line
-		}
-		x = 70
-		y = 2
-
-	}
-	focus = {
-		id = KOR_make_faction
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_appeasement
-		}
-		mutually_exclusive = {
-			focus = KOR_join_allie
-		}
-		x = 69
-		y = 3
-
-	}
-	focus = {
-		id = KOR_join_allie
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_appeasement
-		}
-		mutually_exclusive = {
-			focus = KOR_make_faction
-		}
-		x = 71
-		y = 3
-
-	}
-	focus = {
-		id = KOR_re_intervention_europe
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_join_allie
-			focus = KOR_make_faction
-		}
-		x = 70
-		y = 4
-
-	}
-	focus = {
-		id = KOR_intervention_asia
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_make_faction
-			focus = KOR_join_allie
-		}
-		x = 65
-		y = 4
-
-	}
-	focus = {
-		id = KOR_allie_jap
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_intervention_asia
-		}
-		x = 64
-		y = 5
-
-	}
-	focus = {
-		id = KOR_allie_chi
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_intervention_asia
-		}
-		x = 66
-		y = 5
-
-	}
-	focus = {
-		id = KOR_allie_eng
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_re_intervention_europe
-		}
-		x = 71
-		y = 5
-
-	}
-	focus = {
-		id = KOR_allie_france
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_re_intervention_europe
-		}
-		x = 69
-		y = 5
-
-	}
-	focus = {
-		id = KOR_peace_europe
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_allie_eng
-		}
-		prerequisite = {
-			focus = KOR_allie_france
-		}
-		x = 70
-		y = 6
-
-	}
-	focus = {
-		id = KOR_peace_asia
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_allie_chi
-		}
-		prerequisite = {
-			focus = KOR_allie_jap
-		}
-		x = 65
-		y = 6
-
-	}
-	focus = {
-		id = KOR_intervention_america
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_join_allie
-			focus = KOR_make_faction
-		}
-		x = 75
-		y = 4
-
-	}
-	focus = {
-		id = KOR_american_allie
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_intervention_america
-		}
-		x = 75
-		y = 5
-
-	}
-	focus = {
-		id = KOR_peace_america
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_american_allie
-		}
-		x = 75
-		y = 6
-
-	}
-	focus = {
-		id = KOR_eternal_peace
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_peace_europe
-		}
-		prerequisite = {
-			focus = KOR_peace_asia
-		}
-		prerequisite = {
-			focus = KOR_peace_america
-		}
-		x = 70
-		y = 7
-
-	}
-	focus = {
-		id = KOR_hard_line
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_intervention_ready
-		}
-		mutually_exclusive = {
-			focus = KOR_appeasement
-		}
-		x = 84
-		y = 2
-
-	}
-	focus = {
-		id = KOR_korean_allie
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_hard_line
-		}
-		x = 84
-		y = 3
-
-	}
-	focus = {
-		id = KOR_attack_asia
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_korean_allie
-		}
-		x = 79
-		y = 4
-
-	}
-	focus = {
-		id = KOR_attack_jap
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_attack_asia
-		}
-		x = 78
-		y = 5
-
-	}
-	focus = {
-		id = KOR_attack_chi
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_attack_asia
-		}
-		x = 80
-		y = 5
-
-	}
-	focus = {
-		id = KOR_attack_europe
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_korean_allie
-		}
-		x = 84
-		y = 4
-
-	}
-	focus = {
-		id = KOR_attack_fra
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_attack_europe
-		}
-		x = 83
-		y = 5
-
-	}
-	focus = {
-		id = KOR_attack_allie
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_attack_europe
-		}
-		x = 85
-		y = 5
-
-	}
-	focus = {
-		id = KOR_attack_ger
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_attack_allie
-		}
-		prerequisite = {
-			focus = KOR_attack_fra
-		}
-		x = 84
-		y = 6
-
-	}
-	focus = {
-		id = KOR_unite_asia
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_attack_chi
-		}
-		prerequisite = {
-			focus = KOR_attack_jap
-		}
-		x = 79
-		y = 6
-
-	}
-	focus = {
-		id = KOR_man_problam
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_holy_korean_empire
-			focus = KOR_god_save_the_emperor
-			focus = KOR_god_save_our_country
-		}
-		x = 17
-		y = 8
-
-	}
-	focus = {
-		id = KOR_strong
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_man_problam
-		}
-		mutually_exclusive = {
-			focus = KOR_soft
-		}
-		x = 15
-		y = 9
-
-	}
-	focus = {
-		id = KOR_soft
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_man_problam
-		}
-		mutually_exclusive = {
-			focus = KOR_strong
-		}
-		x = 19
-		y = 9
-
-	}
-	focus = {
-		id = KOR_kill_resistance
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_strong
-		}
-		x = 14
-		y = 10
-
-	}
-	focus = {
-		id = KOR_nego_resistance
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_soft
-		}
-		x = 20
-		y = 10
-
-	}
-	focus = {
-		id = KOR_accept_authority
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_strong
-		}
-		x = 16
-		y = 10
-
-	}
-	focus = {
-		id = KOR_man_annex
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_soft
-		}
-		x = 18
-		y = 10
-
-	}
-	focus = {
-		id = KOR_man_korea
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_nego_resistance
-			focus = KOR_man_annex
-			focus = KOR_accept_authority
-			focus = KOR_kill_resistance
-		}
-		x = 17
-		y = 11
-
-	}
-	focus = {
-		id = KOR_attack_america
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_korean_allie
-		}
-		x = 89
-		y = 4
-
-	}
-	focus = {
-		id = KOR_attack_usa
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_foothold_mex
-		}
-		x = 89
-		y = 6
-
-	}
-	focus = {
-		id = KOR_foothold_mex
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_attack_america
-		}
-		x = 89
-		y = 5
-
-	}
-	focus = {
-		id = KOR_time_to_reach_top
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_attack_ger
-		}
-		prerequisite = {
-			focus = KOR_attack_usa
-		}
-		prerequisite = {
-			focus = KOR_unite_asia
-		}
-		x = 84
-		y = 7
-
-	}
-	focus = {
 		id = KOR_comme_problem
 		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		cost = 10.00
@@ -1701,10 +1244,13 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_prepare_civilwar
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_agrarian_socialism
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_comme_problem
+		}
+		completion_reward = {
+			add_stability = 0.05
 		}
 		x = 30
 		y = 10
@@ -1712,10 +1258,13 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_partizan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_infiltration
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_prepare_civilwar
+		}
+		completion_reward = {
+			add_manpower = 5000
 		}
 		x = 29
 		y = 11
@@ -1723,18 +1272,27 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_aid_soviet
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_prepare_civilwar
 		}
+		completion_reward = {
+			add_manpower = 54175
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 10000
+				producer = KOR
+			}
+			}
 		x = 31
 		y = 11
 
+	
 	}
 	focus = {
 		id = KOR_loyalty_comme
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_concessions
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_partizan
@@ -1742,30 +1300,538 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_aid_soviet
 		}
+		completion_reward = {
+			add_command_power = 20
+		}
 		x = 30
 		y = 12
 
 	}
 	focus = {
 		id = KOR_start_the_civilwar
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_loyalty_comme
 		}
+		completion_reward = {
+			news_event = { id = KOR_news.2 }
+			start_civil_war = {
+				ruling_party = communism
+				ideology = neutrality
+				size = 0.6
+				only_own_territory = no
+				capital = 798
+				states = { 
+				798 797 799
+			}
+			keep_unit_leaders = {
+				750 751 752
+			}
+		}
+	}
 		x = 30
 		y = 13
 
 	}
 	focus = {
 		id = KOR_end_civilwar
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_start_the_civilwar
+		}
+		available = {
+			is_puppet = no
+			has_war = no
+		}
+		
+		completion_reward = {
+
+			load_focus_tree = LMC_korea
 		}
 		x = 30
 		y = 14
 
 	}
+	focus = {
+		id = KOR_imperial_union
+		icon = GFX_goal_tripartite_pact
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_intervention_ready
+		}
+		completion_reward = {
+			add_political_power = -150
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+		x = 77
+		y = 2
+
+	}
+	focus = {
+		id = KOR_east_asia_ready
+		icon = GFX_focus_usa_focus_on_asia
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_imperial_union
+		}
+		completion_reward = {
+			add_political_power = -150
+		}
+		x = 69
+		y = 3
+
+	}
+	focus = {
+		id = KOR_attack_man
+		icon = GFX_focus_attack_man
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_east_asia_ready
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = MAN
+			}
+		}
+		x = 66
+		y = 4
+
+	}
+	focus = {
+		id = KOR_attack_jap
+		icon = GFX_focus_AST_war_japan
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_east_asia_ready
+		}
+		available = {
+            is_subject = no
+			NOT = {
+				is_in_faction_with = JAP
+			}
+			JAP = { exists = yes }
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+			}
+		}
+		x = 68
+		y = 4
+
+	}
+	focus = {
+		id = KOR_vladivostok
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_east_asia_ready
+		}
+		available = {
+			408 = {
+				is_owned_by = SOV
+			}
+			409 = {
+				is_owned_by = SOV
+			}
+		}
+		
+		completion_reward = {
+			408 = {
+				set_state_name = "연해주"
+				add_core_of = KOR
+			}
+			409 = {
+				set_state_name = "북부 연해주"
+				add_core_of = KOR
+			}
+		}
+		x = 70
+		y = 4
+
+	}
+	focus = {
+		id = KOR_intervention_europe
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_imperial_union
+		}
+		completion_reward = {
+			add_political_power = -150
+		}
+		x = 77
+		y = 3
+
+	}
+	focus = {
+		id = KOR_peace_eng
+		icon = GFX_focus_chi_british_cooperation
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_intervention_europe
+		}
+		mutually_exclusive = {
+			focus = KOR_attack_allie
+		}
+		available = {
+			ENG = {
+				is_puppet = no
+			}
+			NOT = {
+				has_war_with = ENG
+			}
+			ENG = { exists = yes }
+		}
+		
+		
+		completion_reward = {
+			ENG = { country_event = kor_world.1 }
+		}
+		x = 73
+		y = 4
+
+	}
+	focus = {
+		id = KOR_attack_allie
+		icon = GFX_focus_attack_britain
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_intervention_europe
+		}
+		mutually_exclusive = {
+			focus = KOR_peace_eng
+		}
+		available = {
+            is_subject = no
+			NOT = {
+				is_in_faction_with = ENG
+			}
+			ENG = { exists = yes }
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG
+			}
+		}
+		x = 75
+		y = 4
+
+	}
+	focus = {
+		id = KOR_attack_ger
+		icon = GFX_focus_attack_germany
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_intervention_europe
+		}
+		available = {
+            is_subject = no
+			NOT = {
+				is_in_faction_with = GER
+			}
+			GER = { exists = yes }
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
+		}
+		x = 77
+		y = 4
+
+	}
+	focus = {
+		id = KOR_attack_ita
+		icon = GFX_focus_generic_italy_first
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_attack_ger
+		}
+		available = {
+            is_subject = no
+			NOT = {
+				is_in_faction_with = ITA
+			}
+			ITA = { exists = yes }
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ITA
+			}
+		}
+		x = 77
+		y = 5
+
+	}
+	focus = {
+		id = KOR_take_jeju
+		icon = GFX_focus_jeju_problem
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_intervention_europe
+		}
+		x = 81
+		y = 4
+
+	}
+	focus = {
+		id = KOR_friend_fra
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_take_jeju
+		}
+		mutually_exclusive = {
+			focus = KOR_attack_fra
+		}
+		available = {
+			ENG = {
+				is_puppet = no
+			}
+			NOT = {
+				has_war_with = FRA
+			}
+			FRA = { exists = yes }
+		}
+		
+		
+		completion_reward = {
+			FRA = { country_event = kor_world.1 }
+		}
+		x = 80
+		y = 5
+
+	}
+	focus = {
+		id = KOR_attack_fra
+		icon = GFX_focus_attack_france
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_take_jeju
+		}
+		mutually_exclusive = {
+			focus = KOR_friend_fra
+		}
+		available = {
+            is_subject = no
+			NOT = {
+				is_in_faction_with = FRA
+			}
+			FRA = { exists = yes }
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FRA
+			}
+		}
+		x = 82
+		y = 5
+
+	}
+	focus = {
+		id = KOR_intervention_america
+		icon = GFX_focus_spa_the_war_of_vengeance
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_imperial_union
+		}
+		completion_reward = {
+			add_political_power = -150
+		}
+		x = 86
+		y = 3
+
+	}
+	focus = {
+		id = KOR_friend_usa
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_intervention_america
+		}
+		mutually_exclusive = {
+			focus = KOR_attack_usa
+		}
+		available = {
+			USA = {
+				is_puppet = no
+			}
+			NOT = {
+				has_war_with = USA
+			}
+			USA = { exists = yes }
+		}
+		
+		
+		completion_reward = {
+			USA = { country_event = kor_world.1 }
+		}
+		x = 85
+		y = 4
+
+	}
+	focus = {
+		id = KOR_intervention_ready
+		icon = GFX_focus_kor_dragon_under_tiger
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_emperor_coronation
+		}
+		completion_reward = {
+			add_political_power = -150
+		}
+		
+		x = 77
+		y = 1
+
+	}
+	focus = {
+		id = KOR_attack_chi
+		icon = GFX_focus_attack_china
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_attack_man
+		}
+		available = {
+            is_subject = no
+			NOT = {
+				is_in_faction_with = CHI
+			}
+			CHI = { exists = yes }
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = CHI
+			}
+		}
+		x = 66
+		y = 5
+
+	}
+	focus = {
+		id = KOR_attack_sia
+		icon = GFX_focus_focus_fra_maquis
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_attack_jap
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+		}
+		x = 68
+		y = 5
+
+	}
+	focus = {
+		id = KOR_attack_sov
+		icon = GFX_focus_attack_soviet
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_vladivostok
+		}
+		available = {
+            is_subject = no
+			NOT = {
+				is_in_faction_with = SOV
+			}
+			SOV = { exists = yes }
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+		}
+		x = 70
+		y = 5
+
+	}
+	focus = {
+		id = KOR_attack_usa
+		icon = GFX_focus_attack_usa
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_intervention_america
+		}
+			mutually_exclusive = {
+			focus = KOR_friend_usa
+		}
+		available = {
+            is_subject = no
+			NOT = {
+				is_in_faction_with = USA
+			}
+			USA = { exists = yes }
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = USA
+			}
+		}
+		x = 87
+		y = 4
+
+	}
+	focus = {
+		id = KOR_unite_chi
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_attack_chi
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YUN
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GXC
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = XSM
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SHX
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PRC
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIK
+			}
+		}
+		x = 66
+		y = 6
+
+	}
+
 }

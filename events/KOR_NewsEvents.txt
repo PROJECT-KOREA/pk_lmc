@@ -33,3 +33,37 @@ news_event = {
 		}
 	}
 }
+
+####공산권-오얏꽃 내전 뉴우스####
+news_event = {
+	id = KOR_news.2
+	title = KOR_news.2.t
+	desc = KOR_news.2.d
+	picture = GFX_news_event_001
+	 
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KOR_news.2.a
+		trigger = {
+			original_tag = KOR
+		}
+	}
+	option = {
+		name = KOR_news.2.b
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = wtt_news.65.b
+		trigger = { 
+			NOT = { 
+				original_tag = KOR
+				original_tag = JAP
+			}
+		}
+	}
+}

@@ -79,4 +79,24 @@ spriteTypes = {
 		name = "GFX_goal_holy_korean_empire"
 		texturefile = "gfx/interface/goals/goal_holy_korean_empire.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_kor_dragon_under_tiger"
+		texturefile = "gfx/interface/goals/focus_kor_dragon_under_tiger.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_crusade_against_nation"
+		texturefile = "gfx/interface/goals/crusade_against_nation.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_jeju_problem"
+		texturefile = "gfx/interface/goals/focus_jeju_problem.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_attack_usa"
+		texturefile = "gfx/interface/goals/focus_attack_usa.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_attack_man"
+		texturefile = "gfx/interface/goals/focus_attack_man.dds"
+	}
 }

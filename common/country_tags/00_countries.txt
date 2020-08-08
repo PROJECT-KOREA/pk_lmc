@@ -205,3 +205,4 @@ COR = "countries/Corsica.txt"
 ######################
 GGJ = "countries/government general japan.txt"
 RYU = "countries/kingdom of ryukyu.txt"
+BAL = "countries/korean balhea.txt"

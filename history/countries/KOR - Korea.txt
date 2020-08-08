@@ -109,6 +109,10 @@ KOR_joungchuone
 		target = GGJ
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = BAL
+		autonomous_state = autonomy_integrated_puppet
+	}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -117,9 +121,9 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 40
-	fascism = 30
+	fascism = 20
 	communism = 20
-	neutrality = 10
+	neutrality = 20
 }
 
 create_country_leader = {
@@ -145,9 +149,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "김일성"
+	name = "인민조선 임시 위원회"
 	desc = ""
-	picture = "gfx/leaders/KOR/Portrait_Kim_Ilsung.dds"
+	picture = "gfx/leaders/KOR/JPR_leader.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
@@ -164,4 +168,286 @@ create_country_leader = {
 	traits = {
 		#
 	}
+}
+####군 지휘관####
+create_corps_commander = {
+  name = "이범석"
+  picture = "bom_sock.dds"
+  traits = { 
+			 }
+  skill = 4
+
+  attack_skill = 6
+  defense_skill = 6
+  planning_skill = 4
+  logistics_skill = 5
+}
+
+create_field_marshal = {
+  name = "지청천"
+  picture = "chong_chen.dds"
+  traits = {
+			 }
+  skill = 4
+
+  attack_skill = 6
+  defense_skill = 5
+  planning_skill = 5
+  logistics_skill = 4
+}
+
+create_field_marshal = {
+  name = "김좌진"
+  picture = "j_wa_jin.dds"
+  traits = { war_hero
+			 }
+  skill = 4
+
+  attack_skill = 6
+  defense_skill = 5
+  planning_skill = 5
+  logistics_skill = 4
+}
+
+create_field_marshal = {
+  name = "홍범도"
+  picture = "bum_do.dds"
+  traits = {
+			 }
+  skill = 4
+
+  attack_skill = 6
+  defense_skill = 4
+  planning_skill = 5
+  logistics_skill = 4
+}
+
+create_field_marshal = {
+  name = "송호성"
+  picture = "song_ho_sung.dds"
+  traits = { cavalry_officer
+			 }
+  skill = 4
+
+  attack_skill = 6
+  defense_skill = 5
+  planning_skill = 5
+  logistics_skill = 4
+}
+
+create_corps_commander = {
+  name = "이강"
+  picture = "Yi_Kang.dds"
+  traits = { politically_connected
+			 media_personality
+			 }
+  skill = 3
+
+  attack_skill = 5
+  defense_skill = 6
+  planning_skill = 2
+  logistics_skill = 4
+}
+
+create_corps_commander = {
+  name = "이우"
+  picture = "Portrait_KOR_Yi_Wu.dds"
+  traits = { politically_connected
+			 }
+  skill = 2
+
+  attack_skill = 6
+  defense_skill = 5
+  planning_skill = 3
+  logistics_skill = 5
+}
+
+create_corps_commander = {
+  name = "김홍일"
+  picture = "hong_one.dds"
+  traits = {
+			 }
+  skill = 2
+
+  attack_skill = 5
+  defense_skill = 5
+  planning_skill = 3
+  logistics_skill = 4
+}
+
+create_corps_commander = {
+  name = "김원봉"
+  picture = "kim_won_bong.dds"
+  traits = {
+			 }
+  skill = 2
+
+  attack_skill = 5
+  defense_skill = 4
+  planning_skill = 3
+  logistics_skill = 4
+}
+
+create_corps_commander = {
+  name = "김석원"
+  picture = "kim_suk_won.dds"
+  traits = {
+			 }
+  skill = 1
+
+  attack_skill = 3
+  defense_skill = 4
+  planning_skill = 3
+  logistics_skill = 3
+}
+
+create_navy_leader = {
+    name = "손원일"
+    picture = "Portrait_admiral_son_wonil.dds"
+    traits = { air_controller ironside superior_tactician }
+    skill = 5
+    attack_skill = 5
+    defense_skill = 3
+    maneuvering_skill = 4
+    coordination_skill = 4
+}
+
+create_navy_leader = {
+    name = "신순성"
+    picture = "shin_soun_sung.dds"
+    traits = {  }
+    skill = 5
+    attack_skill = 5
+    defense_skill = 4
+    maneuvering_skill = 3
+    coordination_skill = 3
+}
+
+create_navy_leader = {
+    name = "박옥규"
+    picture = "pack_ouk_kyu.dds"
+    traits = {  }
+    skill = 5
+    attack_skill = 5
+    defense_skill = 5
+    maneuvering_skill = 4
+    coordination_skill = 3
+}
+
+create_navy_leader = {
+    name = "에밀 뮈즐리에"
+    picture = "emil.dds"
+    traits = {  }
+    skill = 5
+    attack_skill = 5
+    defense_skill = 5
+    maneuvering_skill = 4
+    coordination_skill = 3
+}
+if = {
+	limit = { has_dlc = "Man the Guns"}
+		### 항공모함
+		create_equipment_variant = {
+			name = "광무황제급"
+			type = ship_hull_carrier_conversion_bb
+			name_group = KOR_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				mid_1_custom_slot = ship_deck_space
+			}
+		}
+		### 전함
+		create_equipment_variant = {
+			name = "광개토태왕급"
+			name_group = KOR_BB_HISTORICAL
+			type = ship_hull_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_secondaries_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
+		### 중순양함	
+		create_equipment_variant = {
+			name = "권율급"
+			type = ship_hull_cruiser_2
+			name_group = KOR_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_medium_battery_2
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_airplane_launcher_1
+			}
+		}
+		### 경순양함
+		create_equipment_variant = {
+			name = "울산급"
+			type = ship_hull_cruiser_1
+			name_group = KOR_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_torpedo_2
+				rear_1_custom_slot = empty
+			}
+		}
+		### 구축함
+		create_equipment_variant = {
+			name = "서귀포급" #collection of various WWI and early interwar ships with similiar capabilities
+			type = ship_hull_light_1
+			name_group = KOR_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		### 잠수함
+		create_equipment_variant = {
+			name = "해누리급"
+			type = ship_hull_submarine_1
+			name_group = KOR_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = ship_mine_layer_sub
+			}
+		}
 }

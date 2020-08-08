@@ -26,8 +26,8 @@
  KOR_prisident_desc:0 "대한민국의 1대 대통령인 이승만은 대한의 국부라 해도 과언이 아닐겁니다"
  KOR_god_save_korea:0 "상제는 대한국을 도우소서"
  KOR_god_save_korea_desc:0 "상제는 대한국을 도우소서, 상제는 우리 대한국을 도우소서!"
- KOR_constitutional_monarchy_law:0 "입헌군주정 헌법"
- KOR_constitutional_monarchy_law_desc:0 "독일식 입헌군주정을 지향하는 이 헌법은 우리 대한이 옳은길로 갈수있는 최대한의 방법입니다."
+ KOR_constitutional_monarchy_law:0 "전제군주정 헌법"
+ KOR_constitutional_monarchy_law_desc:0 "전제군주정을 지향하는 이 헌법은 우리 대한이 옳은길로 갈수있는 최대한의 방법입니다."
  KOR_syngman_rhee:0 "이승만 총리대신"
  KOR_syngman_rhee_desc:0 "황제폐하의 명으로 우남 이승만박사가 총리에 선출되었습니다."
  KOR_phlip_jason:0 "서재필 총리대신"
@@ -40,8 +40,8 @@
  KOR_Beomseok_lee_desc:0 "황국협회와의 거래로 조선민족청년단 수장인 이범석이 총리가 되었습니다."
  KOR_god_save_our_emperor:0 "상제는 우리 황제를 도우사"
  KOR_god_save_our_emperor_desc:0 "상제는 우리 황제를 도우사! 상제는 우리 위대한 황제를 도우사!"
- KOR_yi_un:0 "지선황제 이은"
- KOR_yi_un_desc:0 "대한제국의 3대 황제, 지선황제는 대한의 자존심으로 자리매김하고 있습니다." 
+ KOR_yi_un1:0 "지선황제 이은"
+ KOR_yi_un1_desc:0 "대한제국의 3대 황제, 지선황제는 대한의 자존심으로 자리매김하고 있습니다." 
  KOR_no_na:0 "형식화된 중추원"
  KOR_no_na_desc:0 "형식상 민주주의 유지를 위해 중추원의 권한이 없어졌습니다"
  KOR_Ermachtigungsgesetz:0 "전권 위임법"
@@ -57,3 +57,66 @@
  KOR_advisor_guak_sang_hun:0 "곽상훈"
  KOR_advisor_an_chang_ho:0 "안창호"
  KOR_advisor_yi_gun:0 "이건"
+ KOR_advisor_yi_si_young:0 "이시영"
+ 
+  ### 회사 ###
+ KOR_add_fast:0 "국방과학연구소 - 기동전차 연구부"
+ KOR_add_medium:0 "국방과학연구소 - 중형전차 연구부"
+ KOR_add_heavy:0 "국방과학연구소 - 중전차 연구부"
+ KOR_hyundai_pacific:0 "현대중공업 - 태평양 함대 사업부"
+ KOR_hyundai_coastal:0 "현대중공업 - 연안방어 함대 사업부"
+ KOR_hyundai_escort:0 "현대중공업 - 호위 함대 사업부"
+ KOR_sekwang:0 "세광조선"
+ KOR_kai_light:0 "KAI - 경전투기 설계부"
+ KOR_kai_medium:0 "KAI - 중전투기 설계부"
+ KOR_kai_heavy:0 "KAI - 폭격기 설계부"
+ KOR_st:0 "대우정밀공업"
+ KOR_kepco:0 "한국전력공사"
+ KOR_posco:0 "포항종합제철주식회사"
+ 
+  ### 정치고문 ###
+ KOR_jo_so_ang:0 "조소앙"
+ three_equalities:0 "삼균주의자"
+ KOR_syngman_rhee:0 "이승만"
+ KOR_yi_un:0 "영친왕 이은"
+ KOR_yi_kang_2:0 "의친왕 이강"
+ KOR_an_ho_sang:0 "안호상"
+ KOR_sin_ik_hui:0 "신익희"
+ KOR_kim_koo:0 "김구"
+ KOR_ilhan_new:0 "유일한"
+ KOR_chang_myon:0 "장면"
+ KOR_hong_jin:0 "홍진"
+ KOR_ahn_dong_hyuk:0 "안동혁"
+ KOR_hong_sa_ik:0 "홍사익"
+ KOR_ahn_chang_ho:0 "안창호"
+ KOR_lyuh_woon_hyung:0 "여운형"
+ 
+ ### 이론가 ###
+ KOR_ji_chung_chun:0 "지청천"
+ KOR_shin_sung_mo:0 "신성모"
+ KOR_no_baeg_lin:0 "노백린"
+ KOR_lee_tae_gyu:0 "이태규"
+ KOR_do_sang_log:0 "도상록"
+ 
+ ### 육군 참모총장 ###
+ KOR_ji_cheong_cheon:0 "지청천"
+ KOR_kim_chwa_chin:0 "김좌진"
+ KOR_lee_beom_seok:0 "이범석"
+ KOR_kim_suk_won:0 "김석원"
+ 
+ ### 해군 참모총장 ###
+ KOR_sin_sun_sung:0 "신순성"
+ 
+ ### 공군 참모총장 ###
+ KOR_no_baek_rin:0 "노백린"
+ 
+ ### 군 고위 지휘관 ###
+ KOR_kim_won_bong:0 "김원봉"
+ KOR_choe_yong_duk:0 "최용덕"
+ KOR_son_won_il:0 "손원일"
+ KOR_choi_sung_hak:0 "최성학"
+ KOR_yu_dong_yeol:0 "유동열"
+ KOR_kim_kyung_cheon:0 "김경천"
+ KOR_hong_sa_ik_2:0 "홍사익"
+ KOR_kim_hong_il:0 "김홍일"
+ 

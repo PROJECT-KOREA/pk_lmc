@@ -1,0 +1,11 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            GGJ = {
+	  country_event = {
+          id = government_general_japan.1
+          days = 20
+                  }
+            }
+        }
+    }

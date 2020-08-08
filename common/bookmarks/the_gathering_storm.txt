@@ -328,9 +328,9 @@ bookmarks = {
 				PRC_anti_japanese_expedition
 			}
 		}
-		"MAN"={
+		"JAP"={
 			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
+			history = "JAP_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 			}
@@ -469,6 +469,15 @@ bookmarks = {
 				POR_estado_novo
 				POR_workers_of_iberia_unite
 				POR_luso_tropicalism
+			}
+		}
+		"JAP"={
+			minor = yes
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
 			}
 		}
 		

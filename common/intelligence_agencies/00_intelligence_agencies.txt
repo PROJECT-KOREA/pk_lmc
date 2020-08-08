@@ -1,0 +1,21 @@
+# List of names and logos for intelligence agencies
+# available trigger will determine if the logo is in the list of available logos or not
+# names is a list of names. Can be a localization entry, or the name directly. A random name will be picked from them.
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_kor
+	names = { "제국 익문사" }
+	
+	default = { tag = KOR }
+	available = { original_tag = KOR }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_kor_1
+	names = { "중앙 정보부" }
+	
+	default = { tag = KOR }
+	available = { original_tag = KOR }
+}
