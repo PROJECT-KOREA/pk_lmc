@@ -229,17 +229,14 @@ country_event = {
 		
 	option = {
 		name = korea.9.a
-		add_ideas = { KOR_syngman_rhee  }
-		swap_ideas = {
-			remove_idea = test_jae_pil
-			add_idea = test_syngman_rhee
+		add_ideas = { KOR_syngman_rhee }
 		}
-	}
 	
 	option = {
 		name = korea.9.b
+		add_ideas = { KOR_phlip_jason }
 		}
-}
+	}
 	####지선황제 이은 암살####
 country_event = {
 	id = korea.10
@@ -420,13 +417,13 @@ country_event = {
 	option = {
 		name = korea.18.a
 		base = { factor = 70 }
-		country_event = { id = korea.19 }	
+		country_event = { id = korea.10 }	
 	}
 	
 	option = {
 		name = korea.18.b
 		base = { factor = 30 }
-		country_event = { id = korea.10 }	
+		country_event = { id = korea.19 }	
 	}
 }
 	####이은 살아남음####
