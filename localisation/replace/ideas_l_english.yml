@@ -45,10 +45,12 @@
  KOR_no_na:0 "형식화된 중추원"
  KOR_no_na_desc:0 "형식상 민주주의 유지를 위해 중추원의 권한이 없어졌습니다"
  KOR_Ermachtigungsgesetz:0 "전권 위임법"
- KOR_Ermachtigungsgesetz_desc:0 "독일에서 통과된 법과 같은 이 법은 이범석 총통각하에게 무한의 권력을 주는 법입니다" 
+ KOR_Ermachtigungsgesetz_desc:0 "독일에서 통과된 법과 같은 이 법은 이범석 총통각하에게 무한의 권력을 주는 법입니다"
+ kor_han_river:0 "한강의 기적"
+ kor_han_river_desc:0 "우리의 경제는 놀랄정도로 성장했습니다" 
  
  ####정치 조언가####
- KOR_advisor_yi_un:0 "이은"
+ KOR_advisor_yi_kang:0 "이강"
  KOR_advisor_KOR_Beomseok_lee:0 "이범석"
  KOR_advisor_syngman_rhee:0 "이승만"
  KOR_advisor_ryuh_woonhyung:0 "여운형"

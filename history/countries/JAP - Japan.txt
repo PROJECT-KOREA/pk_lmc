@@ -353,7 +353,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Hirohito"
+	name = "쇼와 일왕"
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1989.1.1"

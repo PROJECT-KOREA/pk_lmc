@@ -3,8 +3,8 @@ on_actions = {
         effect = {
             GGJ = {
 	  country_event = {
-          id = government_general_japan.1
-          days = 20
+          id = ggj.2
+          days = 10
                   }
             }
         }

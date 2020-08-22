@@ -107,6 +107,10 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KOR_kim_koo1
 		}
+		completion_reward = {
+			set_cosmetic_tag = KOR_DEMOCRATIC2
+		}
+		
 		x = 10
 		y = 3
 
@@ -126,7 +130,7 @@ focus_tree = {
 					add_idea = KOR_reforming_na
 				}
 			}
-			}
+		}
 		x = 8
 		y = 4
 
@@ -672,13 +676,18 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_5_year_plan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_emperor_coronation
 		}
-		available = {
-			always = no
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 		}
 		x = 35
 		y = 1
@@ -686,10 +695,20 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_civil_Industry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_5_year_plan
+		}
+		completion_reward = {
+			800 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}
 		}
 		x = 31
 		y = 2
@@ -697,10 +716,28 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_urbanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_civil_Industry
+		}
+		completion_reward = {
+			797 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}
+			798 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}
 		}
 		x = 30
 		y = 3
@@ -708,10 +745,47 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_transversal_railway
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_civil_Industry
+		}
+		completion_reward = {	
+			525 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			797 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			798 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			801 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			802 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		x = 32
 		y = 3
@@ -719,7 +793,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_man_urbanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_transversal_railway
@@ -727,16 +801,44 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_urbanization
 		}
+		completion_reward = {
+			328 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes	
+				}
+			}
+			717 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes	
+				}
+			}
+		}
 		x = 31
 		y = 4
 
 	}
 	focus = {
 		id = KOR_science_Industry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_5_year_plan
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 2
+				category = electronics
+				category = computing_tech
+			}
 		}
 		x = 34
 		y = 2
@@ -744,10 +846,13 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_agency_for_defense_development
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_science_Industry
+		}
+		completion_reward = {
+			add_research_slot = 1
 		}
 		x = 34
 		y = 3
@@ -755,10 +860,13 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_science_team
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tfv_generic_tech_sharing
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_agency_for_defense_development
+		}
+		completion_reward = {
+			add_research_slot = 1
 		}
 		x = 34
 		y = 4
@@ -766,10 +874,28 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_war_industry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tank_production
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_5_year_plan
+		}
+		completion_reward = {
+			525 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes	
+				}
+			}
+			527 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes	
+				}
+			}
 		}
 		x = 36
 		y = 2
@@ -777,10 +903,18 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_fortress
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_war_industry
+		}
+		completion_reward = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6944
+					instant_build = yes
+				}
 		}
 		x = 36
 		y = 3
@@ -788,10 +922,19 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_more_armory
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_fortress
+		}
+		completion_reward = {
+			525 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes	
+				}
+			}
 		}
 		x = 36
 		y = 4
@@ -799,7 +942,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_ja_won
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_5_year_plan
@@ -810,10 +953,17 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_oil_fac
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_oil_refinery
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_ja_won
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 798
+			}
 		}
 		x = 38
 		y = 3
@@ -821,10 +971,17 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_iron_fac
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_steel
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_ja_won
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 797
+			}
 		}
 		x = 40
 		y = 3
@@ -832,7 +989,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_industrial_park
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_iron_fac
@@ -840,13 +997,23 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_oil_fac
 		}
+		completion_reward = {
+			798 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes	
+				}
+			}
+		}
 		x = 39
 		y = 4
 
 	}
 	focus = {
 		id = KOR_miracle_of_han_river
-		icon = GFX_goal_unknown
+		icon = GFX_focus_kor_korean_miracle
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_industrial_park
@@ -859,6 +1026,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = KOR_more_armory
+		}
+		completion_reward = {
+			KOR = {
+				add_timed_idea = { idea = kor_han_river days = 365 }
+			}
 		}
 		x = 35
 		y = 5
@@ -1429,7 +1601,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_vladivostok
-		icon = GFX_goal_unknown
+		icon = GFX_focus_vladivostok
 		cost = 1.00
 		prerequisite = {
 			focus = KOR_east_asia_ready

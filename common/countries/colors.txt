@@ -715,7 +715,7 @@ SHL = {
 	color = rgb { 51 51 255 }
 	color_ui = rgb { 51 51 255 }
 }
-FRJ = {
-	color = rgb { 64 0 128 }
-	color_ui = rgb { 64 0 128 }
+RYU = {
+	color = rgb { 176 78 235 }
+	color_ui = rgb { 176 78 235 }
 }

@@ -15,7 +15,7 @@ diplomatic_relation = {
     active = yes
 }
 
-set_research_slots = 4
+set_research_slots = 2
 
 set_stability = 0.8
 
@@ -104,6 +104,7 @@ KOR_anti_japan_military
 KOR_the_london_naval_treaty
 KOR_korean_bongchan_conflict
 KOR_joungchuone
+test_jae_pil
 }
 	set_autonomy = {
 		target = GGJ

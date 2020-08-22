@@ -1,0 +1,41 @@
+﻿l_english:
+
+##Title##
+leader_title_one_none:0 "Leader"
+leader_title_two_none:0 "Leader 2"
+
+leader_title_one_generic:0 "Head of State" # 국가원수
+leader_title_two_generic:0 "중추원 총리대신" # 정부수반
+
+POSITION_GER_Reichsprasident:0 "Reichspräsident"
+POSITION_GER_Reichskanzler:0 "Reichskanzler" # 국가수상
+POSITION_GER_Fuhrer:0 "Führer" # 지도자 
+POSITION_GER_Deputy_Fuhrer:0 "Deputy Führer" # 지도자대리
+POSITION_GER_Parteikanzlei:0 "Parteikanzlei" # 당수부장
+POSITION_GER_Kaiser:0 "Deutscher Kaiser" # 독일 황제
+POSITION_AUS_Kaiser:0 "Präsident" # 대오스트리아 합중국 의장
+
+POSITION_EGY_Nasser:0 "Revolution Leader" # 혁명지도자
+
+POSITION_Chairman:0 "Chairman" # 주석
+POSITION_Chairman_TUC:0 "Chairman of TUC" # 영국 주석
+
+POSITION_President:0 "President" # 대통령
+POSITION_Vice_President:0 "Vice President" # 부통령
+POSITION_Prime_Minister:0 "Prime Minister"
+POSITION_Monarch:0 "Monarch"
+POSITION_King:0 "King" # 국왕
+POSITION_Queen:0 "Queen" # 여왕
+POSITION_Kommisariat:0 "Heilige Liga Hochkommissar" # 여왕
+POSITION_Emperor:0 "Emperor" # 황제
+POSITION_Premier:0 "Premier" # 수상
+POSITION_General_Secretary:0 "General Secretary" # 서기장
+POSITION_Military_Governor:0 "Military Governor" # 군정장관
+POSITION_Civil_Governor:0 "Civil Governor" # 민정장관 
+POSITION_Deputy_Commander:0 "Deputy Commander" # 부사령관
+POSITION_Governor_General:0 "Governor-General" # 총독
+King_of_Defence:0 "King of Defence"
+test_jae_pil:0 "서재필"
+test_syngman_rhee:0 "이승만"
+SECOND_LEADER_NAME:0 "test"
+SECOND_LEADER_DESC:0 "test2"

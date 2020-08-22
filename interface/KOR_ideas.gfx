@@ -77,8 +77,8 @@ spriteTypes = {
 	}
 	####정치조언가####
 	spriteType = {
-		name = "GFX_idea_KOR_advisor_yi_un"
-		texturefile = "gfx/interface/ideas/advisor_KOR_yi_un.dds"
+		name = "GFX_idea_KOR_advisor_yi_kang"
+		texturefile = "gfx/interface/ideas/advisor_KOR_yi_kang.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_advisor_KOR_Beomseok_lee"

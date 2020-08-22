@@ -99,4 +99,12 @@ spriteTypes = {
 		name = "GFX_focus_attack_man"
 		texturefile = "gfx/interface/goals/focus_attack_man.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_vladivostok"
+		texturefile = "gfx/interface/goals/focus_vladivostok.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_korean_miracle"
+		texturefile = "gfx/interface/goals/focus_kor_korean_miracle.dds"
+	}
 }

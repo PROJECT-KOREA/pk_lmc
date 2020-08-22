@@ -28,3 +28,27 @@ country_event = {
 	}
 	
 }
+
+####신익희 총독 취임####
+country_event = {
+	id = ggj.2
+	title = ggj.2.t
+	desc = ggj.2.d
+	picture = GFX_report_event_american_hunger_march
+
+	is_triggered_only = yes
+	fire_only_once = yes	
+	
+	option = {
+		name = ggj.2.a
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+	        name = "신익희 총독"
+	        desc = ""
+	        picture = "gfx/leaders/GGJ/sin_ek_hee.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+		}
+	}
+	
+}

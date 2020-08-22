@@ -1,0 +1,15 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_pol_leader_rank_frame"
+		texturefile = "gfx/interface/pol_leader_rank_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_jae_pil"
+		texturefile = "gfx/interface/jae_pil.dds"
+	}
+	spriteType = {
+		name = "GFX_syngman_rhee"
+		texturefile = "gfx/interface/syngman_rhee.dds"
+	}
+}

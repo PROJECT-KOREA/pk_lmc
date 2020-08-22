@@ -266,12 +266,26 @@ ideas = {
 				stability_factor = 0.1
 	}
 }
+
+		kor_han_river = {
+
+			picture = chi_hyper_inflation5
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+		}
 }
 political_advisor = {
 
-		KOR_advisor_yi_un = {
+		KOR_advisor_yi_kang = {
 			
-			picture =  advisor_KOR_yi_un.dds
+			picture =  advisor_KOR_yi_kang.dds
 			
             allowed = {
                     original_tag = KOR
@@ -863,4 +877,57 @@ political_advisor = {
 		    traits = { convoy_escort_naval_manufacturer }
 	    }
     }
+	
+	
+	### 각료진
+	head_of_government = { ### 정부수반 ###
+		
+		test_jae_pil = { ### 서재필 ###
+			
+			picture = GFX_jae_pil
+			
+			visible = {
+				tag = KOR
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea test_jae_pil"
+			}
+			traits = {
+				head_of_government
+				POSITION_KOR_prime_minister
+			}
+			cancel_if_invalid = yes
+		}
+	
+	
+	
+	
+	}
+	
+	### 각료진
+	hidden_ideas = { ### 정부수반 ###
+		
+		test_syngman_rhee = { ### 이승만이 ###
+			
+			picture = GFX_syngman_rhee
+			
+			visible = {
+				tag = GER
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea test_syngman_rhee"
+			}
+			traits = {
+				head_of_government
+				POSITION_KOR_prime_minister
+			}
+			cancel_if_invalid = yes
+		}
+	
+	
+	
+	
+	}
+
+
 }
