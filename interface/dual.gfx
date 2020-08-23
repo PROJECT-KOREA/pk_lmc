@@ -1,0 +1,31 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_pol_leader_rank_frame"
+		texturefile = "gfx/interface/pol_leader_rank_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_jae_pil"
+		texturefile = "gfx/interface/jae_pil.dds"
+	}
+	spriteType = {
+		name = "GFX_syngman_rhee2"
+		texturefile = "gfx/interface/syngman_rhee2.dds"
+	}
+	spriteType = {
+		name = "GFX_emperor_yi_kang"
+		texturefile = "gfx/interface/emperor_yi_kang.dds"
+	}
+	spriteType = {
+		name = "GFX_bom_sock"
+		texturefile = "gfx/interface/bom_sock.dds"
+	}
+	spriteType = {
+		name = "GFX_emperor_yi_un2"
+		texturefile = "gfx/interface/emperor_yi_un2.dds"
+	}
+	spriteType = {
+		name = "GFX_jang_mun"
+		texturefile = "gfx/interface/jang_mun.dds"
+	}
+}

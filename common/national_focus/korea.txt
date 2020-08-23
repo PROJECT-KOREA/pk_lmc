@@ -109,6 +109,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_cosmetic_tag = KOR_DEMOCRATIC2
+			clr_country_flag = jae_pil
+			set_country_flag = jang_mun
 		}
 		
 		x = 10
@@ -515,6 +517,8 @@ focus_tree = {
 		}
 			completion_reward = {
 				add_ideas = KOR_yi_un1
+				clr_country_flag = jae_pil
+				set_country_flag = emperor_yi_un2
 			}
 		x = 25
 		y = 3

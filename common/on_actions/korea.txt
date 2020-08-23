@@ -59,4 +59,11 @@ on_actions = {
             }
         }
     }
+	on_startup = {
+        effect = {
+            KOR = {
+      set_country_flag = jae_pil
+            }
+        }
+    }
 }

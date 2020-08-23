@@ -719,3 +719,11 @@ RYU = {
 	color = rgb { 176 78 235 }
 	color_ui = rgb { 176 78 235 }
 }
+BAL = {
+	color = rgb { 0 64 128 }
+	color_ui = rgb { 0 64 128 }
+}
+GGJ = {
+	color = rgb { 128 255 255 }
+	color_ui = rgb { 128 255 255 }
+}

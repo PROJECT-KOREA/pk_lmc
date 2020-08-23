@@ -16,4 +16,5 @@ leader_traits = {
 	traits_yi_kang = {
 		random = no
 		political_power_gain = 0.5
+		}
 }

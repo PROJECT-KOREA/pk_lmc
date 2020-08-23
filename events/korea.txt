@@ -126,6 +126,8 @@ country_event = {
 		set_politics = { ruling_party = democratic elections_allowed = yes }
 		add_ideas = { KOR_yi_kang }
 		add_stability = 0.05
+		clr_country_flag = jae_pil
+		set_country_flag = emperor_yi_kang
        
 		}
 	}
@@ -230,6 +232,8 @@ country_event = {
 	option = {
 		name = korea.9.a
 		add_ideas = { KOR_syngman_rhee }
+		clr_country_flag = jae_pil
+		set_country_flag = syngman_rhee2
 		}
 	
 	option = {
@@ -276,6 +280,8 @@ country_event = {
 	option = {
 		name = korea.11.a
 		add_ideas = { KOR_Beomseok_lee }
+		clr_country_flag = jae_pil
+		set_country_flag = bom_sock2
 		}
 	
 	}

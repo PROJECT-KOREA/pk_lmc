@@ -1,0 +1,160 @@
+###########
+### AST ###
+###########
+
+ideas = {
+
+	### 국민정신 ###
+	country = {
+		 
+		
+
+	}
+	
+	### 각료진
+	head_of_government = { ### 정부수반 ###
+		
+		test_jae_pil1 = { ### 서재필이###
+			
+			picture = GFX_jae_pil1
+			
+			visible = {
+				tag = KOR
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea test_jae_pil1"
+			}
+			traits = {
+				head_of_government
+				POSITION_KOR_prime_minister
+			}
+			cancel_if_invalid = yes
+		}
+	
+	
+	
+	
+	}
+	### 각료진
+	hidden_ideas = { ### 정부수반 ###
+		
+		syngman_rhee2 = { ### 싱먼리 ###
+			
+			picture = GFX_syngman_rhee2
+			
+			visible = {
+				tag = KOR
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea syngman_rhee2"
+			}
+			traits = {
+				head_of_government
+				POSITION_KOR_prime_minister
+			}
+			cancel_if_invalid = yes
+		}
+	
+	
+	
+	
+	}
+	### 각료진
+	hidden_ideas = { ### 정부수반 ###
+		
+		emperor_yi_kang = { ### 이강 ###
+			
+			picture = GFX_emperor_yi_kang
+			
+			visible = {
+				tag = KOR
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea emperor_yi_kang"
+			}
+			traits = {
+				POSITION_Emperor
+				POSITION_KOR_emperor
+			}
+			cancel_if_invalid = yes
+		}
+	
+	
+	
+	
+	}
+	
+	### 각료진
+	hidden_ideas = { ### 정부수반 ###
+		
+		bom_sock2 = { ### 이범석 ###
+			
+			picture = GFX_bom_sock
+			
+			visible = {
+				tag = KOR
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea bom_sock2"
+			}
+			traits = {
+				head_of_government
+				POSITION_KOR_prime_minister
+			}
+			cancel_if_invalid = yes
+		}
+	
+	
+	
+	
+	}
+	### 각료진
+	hidden_ideas = { ### 정부수반 ###
+		
+		emperor_yi_un2 = { ### 이은 ###
+			
+			picture = GFX_emperor_yi_un2
+			
+			visible = {
+				tag = KOR
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea emperor_yi_un2"
+			}
+			traits = {
+				POSITION_Emperor
+				POSITION_KOR_emperor
+			}
+			cancel_if_invalid = yes
+		}
+	
+	
+	
+	
+	}
+	### 각료진
+	hidden_ideas = { ### 정부수반 ###
+		
+		jang_mun = { ### 장면 ###
+			
+			picture = GFX_jang_mun
+			
+			visible = {
+				tag = KOR
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea jang_mun"
+			}
+			traits = {
+				head_of_government
+				POSITION_KOR_prime_minister
+			}
+			cancel_if_invalid = yes
+		}
+	
+	
+	
+	
+	}
+
+}

@@ -8,6 +8,7 @@ state=
 	{
 		owner = GGJ
 		add_core_of = JAP
+		add_core_of = GGJ
 		buildings = {
 			infrastructure = 3
 			air_base = 3
