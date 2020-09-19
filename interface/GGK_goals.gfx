@@ -1,0 +1,32 @@
+spriteTypes = {
+
+	### GGK ###
+
+	spriteType = {
+		name = "GFX_focus_reform_government"
+		textureFile = "gfx/interface/goals/GGK/focus_reform_government.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_korean_independence_movement"
+		textureFile = "gfx/interface/goals/GGK/focus_korean_independence_movement.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_canada_help"
+		textureFile = "gfx/interface/goals/GGK/focus_canada_help.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GGK_imperial_government_plus"
+		textureFile = "gfx/interface/goals/GGK/focus_GGK_imperial_government_plus.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GGK_qing_military_training"
+		textureFile = "gfx/interface/goals/GGK/focus_GGK_qing_military_training.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_operation_independence"
+		textureFile = "gfx/interface/goals/GGK/focus_operation_independence.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_first_name_change"
+		textureFile = "gfx/interface/goals/GGK/focus_first_name_change.dds"
+	}

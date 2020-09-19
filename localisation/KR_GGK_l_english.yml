@@ -1,0 +1,101 @@
+﻿l_english:
+
+####국가 설명###
+GGK_KR_GATHERING_STORM_DESC:0 "독일의 편에 붙어 독립을 꾀한다는 작전은 꽤나 그럴싸 했으나 독일이 대전쟁의 승리자가 되고 나서 제국을 확장하는데에 급급한 나머지 한국을 동방의 작은 나라로 취급하여서 실패로 돌아갔습니다. 조선의 국민들은 희망을 점점 잃어가고 있습니다. 하지만 국외에 주재중인 황실과 임시정부의 지도아래 대한제국 해방군과 한국 독립군이 만주, 트란스아무르, 그리고 한반도등 각지에서 독립운동을 하고 있습니다. \n\n 독립의 열기는 식는듯 했으나 1939년 육군출신 총독의 만행으로 다시 뜨겁게 타오르고 있습니다. 임시정부의 국내 진공작전일이 다가오고 있으며 이를 위해선 황실과 협작을 해야만 합니다. 상제는 대한국을 도우소서!" 
+
+### 정당 ###
+GGK_totalist_party:0 "조선 총독부"
+GGK_totalist_party_long:0 "조선 총독부"
+GGK_radical_socialist_party:0 "조선 총독부"
+GGK_radical_socialist_party_long:0 "조선 총독부"
+GGK_syndicalist_party:0 "조선 총독부"
+GGK_syndicalist_party_long:0 "조선 총독부"
+GGK_social_democrat_party:0 "조선 총독부"
+GGK_social_democrat_party_long:0 "조선 총독부"
+GGK_social_liberal_party:0 "조선 총독부"
+GGK_social_liberal_party_long:0 "조선 총독부"
+GGK_market_liberal_party:0 "조선 총독부"
+GGK_market_liberal_party_long:0 "조선 총독부"
+GGK_social_conservative_party:0 "조선 총독부"
+GGK_social_conservative_party_long:0 "조선 총독부"
+GGK_authoritarian_democrat_party:0 ""
+GGK_authoritarian_democrat_party_long:0 "조선 총독부"
+GGK_paternal_autocrat_party:0 "조선 총독부"
+GGK_paternal_autocrat_party_long:0 "조선 총독부"
+GGK_national_populist_party:0 "조선 총독부"
+GGK_national_populist_party_long:0 "조선 총독부"
+
+### 국가원수 ###
+
+### 세력 ###
+
+
+### 국민정신 ###
+ GGK_japanese_general:0 "육군 출신 총독"
+ GGK_japanese_general_desc:0 "3.1운동 이후 일본은 문화통치를 시작했습니다. 문과출신 총독을 약속했지만 약속과 달리 육군출신 총독이 계속 취임하고 있습니다."
+ GGK_independence:0 "한국 독립운동"
+ GGK_independence_desc:0 "1910년 8월 29일, 대한제국은 일제에 의해 멸망했습니다. 하지만 한국 국민은 끝까지 저항하고 있습니다."
+ GGK_national_law:0 "국가 총동원법"
+ GGK_national_law_desc:0 "국가 총동원법으로 많은 인력을 끌어모을수 있을것입니다"
+ GGK_japan_pray:0 "황국 신민의 서사"
+ GGK_japan_pray_desc:0 "1.우리는 황국신민이다. 충성으로써 군국에 보답하련다. 2.우리 황국신민은 신애협력하여 단결을 굳게 하련다. 3.우리 황국신민은 인고단련하여 힘을 길러 황도를 선양하련다."
+
+####이벤트####
+ GGK.0.t:0 "카이저라이히 버전 LAND OF THE MORNING CALM에 어서오십시오"
+ GGK.0.d:0 "카이저라이히 버전 LAND OF THE MORNING CALM에 어서오십시오. 저는 이 모드의 개발자 Alice입니다. 저희가 열심히 만든만큼 재밌게 즐겨주시고 뇌절이 약간 가미되어 있으니 염두해주시면 감사하겠습니다. 그리고 본편 LAND OF THE MORNING CALM과는 설정이 아예다르기 때문에 그점도 참고하심 감사드리겠습니다. 재밌게 플레이 해주세요!"
+ GGK.0.a:0 "알겠습니다!"
+ GGK.1.t:0 "미나미 지로 총독 취임"
+ GGK.1.d:0 "1931년에 조선 총독에 취임하여 각종 경제정책들을 시행했던 우가키 가즈시게는 어제 공식적으로 총독직에서 사임하였습니다. 후임 총독으로는 미나미 지로가 임명되었습니다."
+ GGK.1.a:0 "또 육군 출신이라니..."
+ 
+ GGK.2.t:0 "조선에서의 일본 군사행진"
+ GGK.2.d:0 "내선일체의 일환으로 일본군이 조선에서 군사행진을 했습니다. 이것이 독립운동의 열기를 꺾을지 모릅니다"
+ GGK.2.a:0 "잘 먹혔을것이다"
+ 
+ GGK.4.t:0 "한반도에서의 승리"
+ GGK.4.d:0 "우리는 [JAP.GetNameDef]과의 전투에서 한반도의 통제권을 되찾았습니다. 주요 도시들은 광복군에 의해 해방이 되었고 승리를 기념하고 있습니다. 그러나 우리의 국가는 전쟁을 지속하기에 힘이 부족합니다. 우리는 [JAP.GetNameDef]에 외교관을 파견하여 한반도의 주권을 회복하고 후일을 도모하기 위해 전쟁을 종결 시킬수도 있을 것입니다."
+ GGK.4.a:0 "그래 외교관을 보내자."
+ GGK.4.a.tt:0 "만약 [JAP.GetNameDef]이 제안을 수락하면 전쟁이 종결될 것입니다."
+ GGK.4.b:0 "아니 우리는 끝까지 간다."
+
+ GGK.5.t:0 "[FKR.GetNameDef]에서 온 외교관"
+ GGK.5.d:0 "평화 협정 논의를 위해 한국에서 온 사절단이 왔습니다. [FKR.GetLeader]는 협상 내내 함께하는 전쟁에 대한 공포에서 우리에 대한 확고한 지지를 표방하였습니다. 사절단은 우리들에게  [JAP.GetNameDef]의 운명은 우리에게 달려있으며,  [MAN.GetNameDef] 이 [FKR.GetNameDef]의 손아귀에 떨어진다면 우리는 대륙에서 고립될 것이라고 상기시켜주었습니다."
+ GGK.5.a:0 "우리는 수락할 것이다."
+ GGK.5.a.tt:0 "[FKR.GetNameDef]은 [KOR.GetNameDef]을 합병하고 우리와의 전쟁을 끝낼것 입니다."
+ 
+ GGK.6.t:0 "[JAP.GetNameDef]의 제안 수락"
+ GGK.6.d:0 "[JAP.GetNameDef]은 우리의 평화 협정 제안을 수락했다는 사실을 외교관으로 부터 보고 받았습니다."
+ GGK.6.a:0 "그리 될줄 알았지!"
+
+####국가 중점####
+ GGK_government_problem:0 "총독부 개편"
+ GGK_government_problem_desc:0 "우리의 총독부는 혼란하기 짝이 없습니다 개편을 시작해야합니다"
+ GGK_nasunittai:0 "내선일체"
+ GGK_nasunittai_desc:0 "조선과 일본은 하나입니다"
+ GGK_korea_independence:0 "한국 독립운동"
+ GGK_korea_independence_desc:0 "일본은 조선인을 동화시키기위해 내선일체라는 말도 안되는 이론을 내세우고 있습니다 독립을 쟁취해야합니다"
+ GGK_imperial_march:0 "조선에서의 군사행진"
+ GGK_imperial_march_desc:0 "조선은 독립운동이라는 먹히지 않는 수를 두고있습니다 그들의 희망을 짖밟읍시다"
+ GGK_imperial_pray:0 "황국 신민의 서사"
+ GGK_imperial_pray_desc:0 "우리 황국신민은 신애협력하여 단결을 굳게 하련다."
+ GGK_imtel_agency:0 "정보기관 확장"
+ GGK_imtel_agency_desc:0 "한국 독립운동을 제지하기 위해 정보기관을 확장해야합니다"
+ GGK_japanization:0 "황민화 정책"
+ GGK_japanization_desc:0 "조선의 시민들을 일본시민들로 바꾸어야합니다"
+ GGK_farmer_rev:0 "회사령 폐지"
+ GGK_changseekamen:0 "창씨개명 의무화"
+ GGK_changseekamen_desc:0 "이름을 바꾸어야만 모든일을 할수 있게 합니다"
+ GGK_iron_fac:0 "한반도 제철소 건설"
+ GGK_form_joeson_republic:0 "조선 내지 편입"
+ GGK_form_joeson_republic_desc:0 "GGK_form_joeson_republic_desc"
+ GGK_overseas_help:0 "해외의 도움 모색"
+ GGK_national_call:0 "국가총동원법 제정"
+ GGK_aus_help:0 "호주에 물자 요청"
+ GGK_canada_help:0 "캐나다에 도움 요청"
+ GGK_canada_help_desc:0 "비록 캐나다는 영국에서 도망왔지만 아직까지 강대국입니다 이들에게 물자를 요청하는것도 좋은 방법일것입니다"
+ GGK_imperial_government_plus:0 "황실-임정 합작"
+ GGK_imperial_government_plus_desc:0 "황실과 임정은 거의 각자 활동하고 있습니다 이들을 합작시키면 더 큰 시너지를 발휘할것입니다"
+ GGK_qing_military_training:0 "청나라의 군사훈련"
+ GGK_qing_military_training_desc:0 "청나라는 아직까지 강대국입니다 그들의 군사훈련을 모방하면 큰 도움이 될것입니다"
+ GGK_independence_war:0 "국내 진공작전 개시"
+ GGK_independence_war_desc:0 "모든 준비가 끝났습니다 이제 국내 진공작전을 실행할 때입니다"

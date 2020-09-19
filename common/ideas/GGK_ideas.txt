@@ -1,0 +1,48 @@
+ideas = {
+
+	country = {
+			
+		####시작시 국민정신####
+		
+		GGK_japanese_general = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GGK_japanese_general"}
+			picture = idea_GGK_japanese_general
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		GGK_independence = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GGK_independence"}
+			picture = idea_GGK_independence
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		####내선일체 국민정신####
+		GGK_japanization = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GGK_japanization"}
+			picture = idea_GGK_japanization
+			modifier = {
+				political_power_gain = -0.1
+				autonomy_gain = -0.2
+			}
+		}
+		GGK_national_law = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GGK_national_law"}
+			picture = idea_GGK_national_law
+			modifier = {
+				political_power_gain = -0.1
+				conscription_factor = 0.25
+			}
+		}
+		GGK_japan_pray = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GGK_japan_pray"}
+			picture = idea_GGK_japan_pray
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		
+	}
+}

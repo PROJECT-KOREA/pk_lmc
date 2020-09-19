@@ -1,0 +1,21 @@
+state={
+	id=1096
+	name="STATE_1096" # ChungBuk
+	manpower=3784105
+
+	state_category = seven
+	history={
+		owner = GGK
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = KOR
+	}
+
+	provinces={
+		9936 1100 10115
+	}
+}

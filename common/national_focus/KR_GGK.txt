@@ -1,0 +1,267 @@
+focus_tree = {
+	id = KR_GGK
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GGK
+		}
+	}
+	default = no
+	focus = {
+		id = GGK_government_problem
+		icon = GFX_focus_reform_government
+		cost = 5.00
+		x = 10
+		y = 0
+		completion_reward = {
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = GGK_nasunittai
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_government_problem
+		}
+		mutually_exclusive = {
+			focus = GGK_korea_independence
+		}
+		completion_reward = {
+			 add_autonomy_score = {
+			 	value = -50
+			}
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = GGK_imperial_march
+		icon = GFX_focus_mex_soldaderas
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_nasunittai
+		}
+		completion_reward = {
+			country_event = GGK.2
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = GGK_national_call
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_imperial_march
+		}
+		completion_reward = {
+			GGK = {
+				add_ideas = { idea = GGK_national_law }
+			}
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = GGK_japanization
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_imperial_march
+		}
+		completion_reward = {
+			GGK = {
+				add_ideas = { idea = GGK_japanization }
+			}
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = GGK_imperial_pray
+		icon = GFX_focus_jap_showa_restoration
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_japanization
+		}
+		completion_reward = {
+			GGK = {
+				add_ideas = { idea = GGK_japan_pray }
+			}
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = GGK_farmer_rev
+		icon = GFX_focus_generic_industry_3
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_japanization
+		}
+		completion_reward = {	
+			525 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = GGK_iron_fac
+		icon = GFX_focus_generic_steel
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_farmer_rev
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 1104
+			}
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = GGK_korea_independence
+		icon = GFX_focus_korean_independence_movement
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_government_problem
+		}
+		mutually_exclusive = {
+			focus = GGK_nasunittai
+		}
+		completion_reward = {
+			 add_autonomy_score = {
+			 	value = 50
+			}
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = GGK_overseas_help
+		icon = GFX_focus_usa_focus_on_asia
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_korea_independence
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = GGK_aus_help
+		icon = GFX_focus_AST_never_gallipoli
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_overseas_help
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = GGK_canada_help
+		icon = GFX_focus_canada_help
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_overseas_help
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = GGK_imperial_government_plus
+		icon = GFX_focus_GGK_imperial_government_plus
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_canada_help
+		}
+		prerequisite = {
+			focus = GGK_aus_help
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = GGK_qing_military_training
+		icon = GFX_focus_GGK_qing_military_training
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_imperial_government_plus
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = GGK_changseekamen
+		icon = GFX_focus_first_name_change
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_imperial_pray
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = GGK_form_joeson_republic
+		icon = GFX_goal_Korea_Colony
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_changseekamen
+		}
+		prerequisite = {
+			focus = GGK_iron_fac
+		}
+		completion_reward = {
+			JAP = {
+				annex_country = {
+					target = GGK
+					transfer_troops = no
+				}
+			}
+			JAP = { change_tag_from = GGK }
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = GGK_independence_war
+		icon = GFX_focus_operation_independence
+		cost = 5.00
+		prerequisite = {
+			focus = GGK_qing_military_training
+		}
+		completion_reward = {
+			country_event = GGK.3	
+			KOR = { change_tag_from = GGK }
+		}
+		x = 14
+		y = 6
+
+	}
+}

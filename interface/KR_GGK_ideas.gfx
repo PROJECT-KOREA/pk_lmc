@@ -1,0 +1,25 @@
+spriteTypes = {
+	
+	### GGK ###
+
+	spriteType = {
+		name = "GFX_idea_GGK_japanese_general"
+		texturefile = "gfx/interface/ideas/GGK_japanese_general.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGK_independence"
+		texturefile = "gfx/interface/ideas/idea_KOR_korea_hurray.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGK_japanization"
+		texturefile = "gfx/interface/ideas/idea_GGK_japanization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGK_national_law"
+		texturefile = "gfx/interface/ideas/idea_GGK_national_law.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGK_japan_pray"
+		texturefile = "gfx/interface/ideas/idea_GGK_japan_pray.dds"
+	}
+}

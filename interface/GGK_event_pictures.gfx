@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_KOR_kim_koo_speech"
+		textureFile = "gfx/event_pictures/report_event_KOR_kim_koo_speech.dds"
+	}
+}

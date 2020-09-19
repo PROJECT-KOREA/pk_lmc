@@ -1,0 +1,33 @@
+state={
+	id=1100
+	name="STATE_1100" # GyeongBuk
+	manpower=3663105
+
+	state_category = eight
+	resources={
+		steel=3
+		chromium=8
+		tungsten=13
+	}
+	
+	history={
+		owner = GGK
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			dockyard = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			11912 30 
+		}
+		victory_points = {
+			1081 20 
+		}
+	}
+
+	provinces={
+		4103 7121 11912 12089 1081
+	}
+}

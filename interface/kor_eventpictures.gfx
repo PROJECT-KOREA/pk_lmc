@@ -1,6 +1,0 @@
-spriteTypes = {
-	
-	spriteType = {
-		name = "GFX_imperial_fastival"
-		texturefile = "gfx/event_pictures/imperial_fastival.dds"
-	}

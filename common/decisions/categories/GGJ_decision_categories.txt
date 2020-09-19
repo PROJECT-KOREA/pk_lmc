@@ -1,6 +1,0 @@
-form_kingdom_of_japan_category = {
-	icon = 
-	visible = {
-		tag = GGJ
-	}
-}

@@ -1,0 +1,64 @@
+add_namespace = KOR
+
+country_event = {
+	id = KOR.1
+	title = KOR.1.t
+	desc = KOR.1.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		tag = KOR
+		525 = { is_controlled_by = KOR }
+		525 = { is_owned_by = KOR }
+		527 = { is_controlled_by = KOR }
+		527 = { is_owned_by = KOR }
+		KOR = { has_war_with = GGK }
+		KOR = { has_war_with = JAP}
+	}
+	
+	option = {
+		name = KOR.1.a
+		JAP = { country_event = { id = KOR.2 days = 1 } }
+	}
+
+	option = {
+		name = KOR.1.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = KOR.2
+	title = KOR.2.t
+	desc = KOR.2.d
+	picture = GFX_report_event_japanese_army_parade
+
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	option = {
+		name = KOR.2.a
+		KOR = { country_event = { id = KOR.3 days = 1 }}
+	}
+}
+
+country_event = {
+	id = KOR.3
+	title = KOR.3.t
+	desc = KOR.3.d
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+
+	option = {
+		name = KOR.3.a
+		annex_country = { target = GGK }
+		white_peace = JAP
+	}
+}

@@ -1,6 +1,0 @@
-form_united_kingdom_of_balhea_category = {
-	icon = 
-	visible = {
-		tag = BAL
-	}
-}
