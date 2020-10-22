@@ -1,13 +1,11 @@
-version="1.9.3"
+version="1.9.*"
+picture="thumbnail.png"
 tags={
 	"Alternative History"
 	"Events"
 	"Gameplay"
-	"Fixes"
+	"Map"
 }
-dependencies={
-	"Korean Language (Europa)"
-	"Kaiserreich"
-}
-name="PROJECT KOREA: Land of the Morning Calm (KAISERREICH Sub Mod)"
-supported_version="1.9.3"
+name="PROJECT KOREA : THE LAND OF MORNING CALM"
+supported_version="1.10.1"
+remote_file_id="2181471523"

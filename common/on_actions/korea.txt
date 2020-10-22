@@ -1,0 +1,96 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.1
+          days = 2
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.2
+          days = 3
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.8
+          days = 5
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.12
+          days = 0
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.17
+          days = 20
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.18
+          days = 30
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+      set_country_flag = jae_pil
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.20
+          days = 1
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = korea.21
+          days = 6
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            KOR = {
+				create_intelligence_agency = yes
+            }
+        }
+    }
+}

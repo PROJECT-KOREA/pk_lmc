@@ -1,0 +1,6 @@
+form_empire_of_japan_category = {
+	icon = 
+	visible = {
+		tag = JAP
+	}
+}

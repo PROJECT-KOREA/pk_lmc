@@ -1,0 +1,53 @@
+####대일본 제국 건설####
+
+form_empire_of_japan_category = {
+	
+	form_empire_of_japan = {
+
+		icon = generic_form_nation
+		
+		fire_only_once = yes
+		
+		allowed = {
+				original_tag = JAP
+
+		}
+
+		available = {
+			is_subject = NO
+			has_government = neutrality
+			# japan
+			custom_trigger_tooltip = {
+				tooltip = form_country_japanempire_required_states_tt
+				controls_state = 529
+				controls_state = 528
+				controls_state = 530
+
+
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = JAP
+			}
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = JAP_EMPIRE
+            country_event = jap.1
+			# japan
+			custom_effect_tooltip = form_country_japanemprie_coring_states_tt
+			hidden_effect = {
+				controls_state = 529
+				controls_state = 528
+				controls_state = 530
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+			}
+		}
+	}
+}

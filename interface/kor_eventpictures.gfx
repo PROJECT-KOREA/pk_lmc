@@ -1,0 +1,55 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_imperial_fastival"
+		texturefile = "gfx/event_pictures/imperial_fastival.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_qing"
+		texturefile = "gfx/event_pictures/news_event_qing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_kor_army"
+		texturefile = "gfx/event_pictures/news_event_kor_army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_kor_army1"
+		texturefile = "gfx/event_pictures/news_event_kor_army1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_berlin_fall1"
+		texturefile = "gfx/event_pictures/news_event_berlin_fall1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_usa_fall"
+		texturefile = "gfx/event_pictures/news_event_usa_fall.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_news_event_fall_of_ny"
+		texturefile = "gfx/event_pictures/news_event_fall_of_ny.dds"
+	}
+			
+	spriteType = {
+		name = "GFX_news_event_fall_of_paris"
+		texturefile = "gfx/event_pictures/news_event_fall_of_paris.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_london_fall1"
+		texturefile = "gfx/event_pictures/news_event_london_fall1.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_news_event_nanking_fall1"
+		texturefile = "gfx/event_pictures/news_event_nanking_fall1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_parliamentary_siege"
+		texturefile = "gfx/event_pictures/parliamentary_siege.dds"
+	}

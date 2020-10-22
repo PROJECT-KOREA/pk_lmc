@@ -1,0 +1,32 @@
+add_namespace = jap
+
+####새로운 일본####
+country_event = {
+	id = jap.1
+	title = jap.1.t
+	desc = jap.1.d
+	picture = GFX_report_event_american_hunger_march
+
+	is_triggered_only = yes
+	fire_only_once = yes	
+	
+
+	
+	option = {
+		name = jap.1.a
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+	        name = "쇼와 히로히토 천황"
+	        desc = ""POLITICS_HIROHITO2_DESC""
+	        picture = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+		}
+	 	set_party_name = {
+			ideology = neutrality
+			long_name = JAP_japan_emperors_party
+			name = JAP_emperors_party
+			}
+	}
+	
+}

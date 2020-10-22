@@ -1,0 +1,249 @@
+focus_tree = {
+	id = japan
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	default = no
+	focus = {
+		id = JAP_showa_rev
+		icon = GFX_focus_jap_showa_restoration
+		cost = 10.00
+		mutually_exclusive = {
+			focus = JAP_showa_democraticy
+		}
+		completion_reward = {
+				add_political_power = 100
+		}
+		x = 2
+		y = 0
+
+	}
+	focus = {
+		id = JAP_showa_democraticy
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		mutually_exclusive = {
+			focus = JAP_showa_rev
+		}
+		completion_reward = {
+			set_politics = { ruling_party = democratic elections_allowed = yes }
+			}
+		x = 17
+		y = 0
+
+	}
+	focus = {
+		id = JAP_focus_europe
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_showa_rev
+			focus = JAP_showa_democraticy
+		}
+		completion_reward = {
+			add_political_power = -100
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = JAP_king_central
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_showa_rev
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = JAP_delete_na
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_king_central
+		}
+		completion_reward = {
+			add_political_power = -150
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = JAP_kings_guard
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_showa_rev
+		}
+		completion_reward = {
+			add_manpower = 10000
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = JAP_focus_asia
+		icon = GFX_focus_usa_focus_on_asia
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_showa_rev
+			focus = JAP_showa_democraticy
+		}
+		completion_reward = {
+			add_political_power = -100
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = JAP_surrender_kor
+		icon = GFX_focus_focus_fra_fascist_threat
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_focus_asia
+		}
+		mutually_exclusive = {
+			focus = JAP_challenge_korea
+		}		
+		completion_reward = {
+			KOR = { country_event = kor_world.1 }
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = JAP_challenge_korea
+		icon = GFX_focus_jap_cast_the_die
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_focus_asia
+		}
+		mutually_exclusive = {
+			focus = JAP_surrender_kor
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = KOR
+			}
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = JAP_eng_peace
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_focus_europe
+		}
+		completion_reward = {
+			ENG = { country_event = kor_world.1 }
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = JAP_france
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_focus_europe
+		}
+		completion_reward = {
+			FRA = { country_event = kor_world.1 }
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = JAP_bodyguard
+		icon = GFX_focus_hol_continue_the_war_in_batavia
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_showa_democraticy
+		}
+		completion_reward = {
+			add_manpower = 10000
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = JAP_form_na
+		icon = GFX_focus_usa_build_the_pentagon
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_showa_democraticy
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = JAP_king_no_power
+		icon = GFX_focus_generic_royal_wedding
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_form_na
+		}
+		completion_reward = {
+				add_ideas = JAP_hirohito
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = JAP_korea_france
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_france
+		}
+		completion_reward = {
+		FRA  = { add_opinion_modifier = { target = ROOT modifier = in_faction } }
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = JAP_korean_autonomy
+		icon = GFX_focus_generic_monarchy_2
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_surrender_kor
+		}
+		completion_reward = {
+			KOR = {
+				puppet = JAP
+				}
+		}
+	
+		x = 6
+		y = 3
+
+	}
+}

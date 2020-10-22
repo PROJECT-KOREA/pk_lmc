@@ -1,0 +1,116 @@
+﻿units = {
+	fleet = {
+		name = "대한제국 황립 함대"			
+		naval_base = 7221
+		task_force = {
+			name = "제1 전투전단"
+			location = 7221
+			ship = { name = "IKN 태조대왕" definition = carrier equipment = { carrier_1 = {amount = 1 owner = KOR} } 				
+				air_wings = { 
+					cv_fighter_equipment_0 =  { owner = "KOR" amount = 9 } 	# historical 12
+					cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 24 } 	# historical 36
+				}
+			}
+        	ship = { name = "KIS 융희황제" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
+        	ship = { name = "KIS 정조" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
+        	ship = { name = "KIS 이순신" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
+        	ship = { name = "KIS 류성룡" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 곽재우" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 신립" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 장보고" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 권율" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 한성" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 부산" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 평양" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 수원" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 인천" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 독도" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 여주" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 파주" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 광주" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 부평" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 장단" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 양금" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 화성" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+		}	
+		task_force = {
+			name = "제1 잠수전단"
+			location = 7221
+			ship = { name = "KIS 잠-001" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 잠-002" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 잠-003" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 잠-004" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 잠-005" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 잠-006" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 잠-007" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 잠-008" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 잠-009" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "KIS 잠-010" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+		}
+	}
+
+	fleet = {
+		name = "대한제국 제2 함대"			
+		naval_base = 4056
+		task_force = {
+			name = "제2 전투전단"
+			location = 4056
+            ship = { name = "KIS 광무황제" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "광개토태왕급" } } }
+            ship = { name = "KIS 광개토태왕" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "광개토태왕급" } } }
+		    ship = { name = "KIS 장수왕" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "권율급" } } }
+		    ship = { name = "KIS 근초고왕" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "권율급" } } }
+		    ship = { name = "KIS 소수림왕" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "권율급" } } }
+		    ship = { name = "KIS 지리" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+		    ship = { name = "KIS 설악" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+		    ship = { name = "KIS 가야" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+		    ship = { name = "KIS 영원" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+		    ship = { name = "KIS 의원" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+		    ship = { name = "KIS 김산" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+		    ship = { name = "KIS 풍기" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+		    ship = { name = "KIS 남해" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+		    ship = { name = "KIS 동해" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+			ship = { name = "KIS 해이" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+			ship = { name = "KIS 평창" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+			ship = { name = "KIS 영제" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+			ship = { name = "KIS 정구" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+			ship = { name = "KIS 국지" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+			ship = { name = "KIS 새제" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+			ship = { name = "KIS 부산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+			ship = { name = "KIS 강주" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+			ship = { name = "KIS 부령" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+			ship = { name = "KIS 단장" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+			ship = { name = "KIS 영궁" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+			ship = { name = "KIS 가성" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "서귀포급" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { 		
+		equipment = {
+			type = light_cruiser_2
+			creator = "KOR" 
+		}
+		requested_factories = 1
+		progress = 0.33
+		amount = 1
+	}
+	add_equipment_production = { 		
+		equipment = {
+			type = destroyer_2
+			creator = "KOR" 
+		}
+		requested_factories = 1
+		progress = 0.33
+		amount = 1
+	}
+	add_equipment_production = { 		
+		equipment = {
+			type = submarine_2
+			creator = "KOR" 
+		}
+		requested_factories = 1
+		progress = 0.33
+		amount = 1
+	}
+}

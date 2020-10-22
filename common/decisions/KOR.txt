@@ -1,0 +1,191 @@
+####아메리카 연합왕국####
+form_united_kingdom_of_america_category = {
+	
+	form_united_kingdom_of_america = {
+
+		icon = generic_form_nation
+		
+		fire_only_once = yes
+		
+		allowed = {
+				original_tag = KOR
+
+		}
+
+		available = {
+			is_subject = no
+			has_government = neutrality
+			custom_trigger_tooltip = {
+				tooltip = form_country_united_kingdom_of_america_required_states_tt
+				USA = { is_subject_of = KOR }
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+
+		complete_effect = {			
+			KOR = {
+				every_state = {
+					limit = { is_core_of = USA }
+					add_core_of = UKA
+				}
+				UKA = { annex_country = { target = USA transfer_troops = no } }
+				puppet = UKA
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+			}
+	}
+	
+	form_korean_middle_Africa = {
+	
+	available = {
+				has_government = neutrality	
+			has_full_control_of_state = 546
+			has_full_control_of_state = 773
+			has_full_control_of_state = 777
+			has_full_control_of_state = 295
+			has_full_control_of_state = 718
+			has_full_control_of_state = 769
+			has_full_control_of_state = 768
+			has_full_control_of_state = 548
+			has_full_control_of_state = 547
+			has_full_control_of_state = 538
+			has_full_control_of_state = 772
+			has_full_control_of_state = 539
+			has_full_control_of_state = 660
+			has_full_control_of_state = 774
+			has_full_control_of_state = 558
+			has_full_control_of_state = 776
+			has_full_control_of_state = 274
+			has_full_control_of_state = 779
+		}		
+		
+		cost = 0
+		
+		visible = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+
+		complete_effect = {
+			puppet = ZIM
+			ZIM = {
+				set_party_name = { 
+					ideology = neutrality 
+					long_name = "한국 중앙아프키라 주식회사" 
+					name = "아프리카 총독부"
+				create_country_leader = {
+					name = "아프리카 총독부"
+					desc = ""
+					picture = gfx/leaders/KMA/middle_africa_company.dds
+					expire = "1965.1.1"
+					ideology = despotism
+				}
+				}				
+				set_cosmetic_tag = ZIM_KOR
+				transfer_state = 546
+				transfer_state = 773
+				transfer_state = 777
+				transfer_state = 295
+				transfer_state = 718
+				transfer_state = 769
+				transfer_state = 768
+				transfer_state = 548
+				transfer_state = 547
+				transfer_state = 538
+				transfer_state = 772
+				transfer_state = 539
+				transfer_state = 660
+				transfer_state = 774
+				transfer_state = 558
+				transfer_state = 776
+				transfer_state = 274
+				transfer_state = 779
+				set_capital = 546
+				
+				add_state_core = 546
+				add_state_core = 773
+				add_state_core = 777
+				add_state_core = 295
+				add_state_core = 718
+				add_state_core = 769
+				add_state_core = 768
+				add_state_core = 548
+				add_state_core = 547
+				add_state_core = 538
+				add_state_core = 772
+				add_state_core = 539
+				add_state_core = 660
+				add_state_core = 774
+				add_state_core = 558
+				add_state_core = 776
+				add_state_core = 274
+				add_state_core = 779				
+			}
+		}
+	}
+}
+		
+
+
+KOR_time_to_reaching_top_decision = {
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = KOR
+		}
+
+		visible = {
+			original_tag = KOR
+			NOT = { has_global_flag = KOR_time_to_reaching_top_flag }
+			has_completed_focus = CK_world_union
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					is_puppet_of = KOR
+				}
+				KOR = {
+					annex_country = {
+						target = PREV
+						transfer_troops = no
+					}
+				}
+			}
+
+			every_country = {
+				limit = {
+					NOT = {
+						is_puppet_of = KOR
+					}
+					NOT = {
+						tag = KOR
+					}
+				}
+				KOR = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+
+			hidden_effect = {
+				set_global_flag = KOR_time_to_reaching_top_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+

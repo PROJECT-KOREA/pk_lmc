@@ -1,0 +1,31 @@
+add_namespace = qin
+
+####푸이 황제 옹립####
+country_event = {
+	id = qin.1
+	title = qin.1.t
+	desc = qin.1.d
+	picture = GFX_report_event_american_hunger_march
+
+	is_triggered_only = yes
+	fire_only_once = yes	
+	
+	option = {
+		name = qin.1.a
+		news_event = KOR_news.4
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+	        name = "강덕제 푸이"
+	        desc = "POLITICS_EMPEROR_PU_YI_DESC"
+	        picture = "gfx/leaders/QIN/Portrait_QIN_Pu_Yi.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+		}
+	 	set_party_name = {
+			ideology = neutrality
+			long_name = qin_qing_kings_party
+			name = qin_kings_party
+			}
+	}
+	
+}

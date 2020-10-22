@@ -1,0 +1,54 @@
+add_namespace = ggj
+
+####노부히토 국왕 옹립####
+country_event = {
+	id = ggj.1
+	title = ggj.1.t
+	desc = ggj.1.d
+	picture = GFX_report_event_american_hunger_march
+
+	is_triggered_only = yes
+	fire_only_once = yes	
+	
+	option = {
+		name = ggj.1.a
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+	        name = "노부히토 천황"
+	        desc = ""
+	        picture = "gfx/leaders/GGJ/nobuhito.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+		}
+	 	set_party_name = {
+			ideology = neutrality
+			long_name = GGJ_japan_kings_party
+			name = GGJ_kings_party
+			}
+	}
+	
+}
+
+####신익희 총독 취임####
+country_event = {
+	id = ggj.2
+	title = ggj.2.t
+	desc = ggj.2.d
+	picture = GFX_report_event_american_hunger_march
+
+	is_triggered_only = yes
+	fire_only_once = yes	
+	
+	option = {
+		name = ggj.2.a
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+	        name = "신익희 총독"
+	        desc = ""
+	        picture = "gfx/leaders/GGJ/sin_ek_hee.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+		}
+	}
+	
+}

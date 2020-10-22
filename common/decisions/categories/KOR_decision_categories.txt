@@ -1,0 +1,29 @@
+form_united_kingdom_of_america_category = {
+
+	icon = generic_formable_nations
+	allowed = {
+		original_tag = KOR
+	}
+	
+	visible = {
+		tag = KOR
+	}
+}
+
+KOR_time_to_reaching_top_decision = {
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_FKR_unified_earth_government
+
+	allowed = {
+		original_tag = KOR
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = CK_world_union
+		}
+	}
+}
+
+

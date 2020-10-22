@@ -1,0 +1,405 @@
+﻿add_namespace = KOR_news
+
+	####한성진군 뉴우스####
+news_event = {
+	id = KOR_news.1
+	title = KOR_news.1.t
+	desc = KOR_news.1.desc
+	picture = GFX_news_event_003
+	 
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KOR_news.1.a
+		trigger = {
+			original_tag = KOR
+		}
+	}
+	option = {
+		name = KOR_news.1.b
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = wtt_news.65.b
+		trigger = { 
+			NOT = { 
+				original_tag = KOR
+				original_tag = JAP
+			}
+		}
+	}
+}
+
+####공산권-오얏꽃 내전 뉴우스####
+news_event = {
+	id = KOR_news.2
+	title = KOR_news.2.t
+	desc = KOR_news.2.d
+	picture = GFX_news_event_001
+	 
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KOR_news.2.a
+		trigger = {
+			original_tag = KOR
+		}
+	}
+	option = {
+		name = KOR_news.2.b
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = wtt_news.65.b
+		trigger = { 
+			NOT = { 
+				original_tag = KOR
+				original_tag = JAP
+			}
+		}
+	}
+}
+
+####청나라 복고 뉴우스####
+news_event = {
+	id = KOR_news.4
+	title = KOR_news.4.t
+	desc = KOR_news.4.d
+	picture = GFX_news_event_qing
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KOR_news.4.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = KOR_news.4.b
+		trigger = {
+			TAG = QIN
+		}
+	}
+	option = {
+		name = KOR_news.4.c
+		trigger = {
+			TAG = JAP
+		}
+	}
+}
+
+####도쿄함락 뉴우스####
+news_event = {
+	id = KOR_news.5
+	title = KOR_news.5.t
+	desc = KOR_news.5.desc
+	picture = GFX_news_event_kor_army
+	
+	major = yes
+
+	
+	trigger = {
+		282 = { is_controlled_by = KOR }
+		282 = { is_owned_by = JAP }
+		KOR = { has_war_with = JAP }
+		NOT = { has_global_flag = fall_of_tokyo_kor }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_tokyo_kor
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = KOR_news.5.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = JAP }
+	}
+}
+####베를린함락 뉴우스####
+news_event = {
+	id = KOR_news.6
+	title = KOR_news.6.t
+	desc = KOR_news.6.desc
+	picture = GFX_news_event_berlin_fall1
+	
+	major = yes
+
+	
+	trigger = {
+		64 = { is_controlled_by = KOR }
+		64 = { is_owned_by = GER }
+		KOR = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_berlin_kor }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_berlin_kor
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = KOR_news.6.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = KOR_news.6.c
+		trigger = { TAG = GER }
+	}
+}
+####와싱탄 함락 뉴우스####
+news_event = {
+	id = KOR_news.7
+	title = KOR_news.7.t
+	desc = KOR_news.7.desc
+	picture = GFX_news_event_usa_fall
+	
+	major = yes
+
+	
+	trigger = {
+		361 = { is_controlled_by = KOR }
+		361 = { is_owned_by = USA }
+		KOR = { has_war_with = USA }
+		NOT = { has_global_flag = fall_of_usa_kor }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_usa_kor
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = KOR_news.7.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = USA }
+	}
+}
+
+####뉴욕 함락 뉴우스####
+news_event = {
+	id = KOR_news.8
+	title = KOR_news.8.t
+	desc = KOR_news.8.desc
+	picture = GFX_news_event_fall_of_ny
+	
+	major = yes
+
+	
+	trigger = {
+		358 = { is_controlled_by = KOR }
+		358 = { is_owned_by = USA }
+		KOR = { has_war_with = USA }
+		NOT = { has_global_flag = fall_of_ny_kor }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_ny_kor
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = KOR_news.8.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = USA }
+	}
+}
+####파리 함락####
+news_event = {
+	id = KOR_news.9
+	title = KOR_news.9.t
+	desc = KOR_news.9.desc
+	picture = GFX_news_event_fall_of_paris
+	
+	major = yes
+
+	
+	trigger = {
+		16 = { is_controlled_by = KOR }
+		16 = { is_owned_by = FRA }
+		KOR = { has_war_with = FRA }
+		NOT = { has_global_flag = fall_of_paris_kor }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_paris_kor
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = FRA
+			}
+		}
+	}
+	option = {
+		name = KOR_news.9.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = FRA }
+	}
+}
+####런던 함락####
+news_event = {
+	id = KOR_news.10
+	title = KOR_news.10.t
+	desc = KOR_news.10.desc
+	picture = GFX_news_event_london_fall1
+	
+	major = yes
+
+	
+	trigger = {
+		126 = { is_controlled_by = KOR }
+		126 = { is_owned_by = ENG }
+		KOR = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_london_kor }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_london_kor
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = KOR_news.10.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = ENG }
+	}
+}
+####난징 함락####
+news_event = {
+	id = KOR_news.11
+	title = KOR_news.11.t
+	desc = KOR_news.11.desc
+	picture = GFX_news_event_nanking_fall1
+	
+	major = yes
+
+	
+	trigger = {
+		126 = { is_controlled_by = KOR }
+		126 = { is_owned_by = CHI }
+		KOR = { has_war_with = CHI }
+		NOT = { has_global_flag = fall_of_nanking_kor }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_nanking_kor
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = CHI
+			}
+		}
+	}
+	option = {
+		name = KOR_news.11.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = CHI }
+	}
+}
+
+

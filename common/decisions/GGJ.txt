@@ -1,0 +1,58 @@
+####일본제국 건국####
+
+form_kingdom_of_japan_category = {
+	
+	form_kingdom_of_japan = {
+
+		icon = generic_form_nation
+		
+		fire_only_once = yes
+		
+		allowed = {
+				original_tag = GGJ
+
+		}
+
+		available = {
+			is_subject = yes
+			# japan
+			custom_trigger_tooltip = {
+				tooltip = form_country_japankingdom_required_states_tt
+				controls_state = 531
+				controls_state = 535
+				controls_state = 532
+				controls_state = 534
+				controls_state = 282
+				controls_state = 533
+				controls_state = 536
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGJ
+			}
+			NOT = { has_global_flag = JAP_UNITED_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = JAP_UNITED
+            country_event = ggj.1
+			# japan
+			custom_effect_tooltip = form_country_japankingdom_coring_states_tt
+			hidden_effect = {
+				531 = { add_core_of = ROOT }
+				535 = { add_core_of = ROOT }
+				532 = { add_core_of = ROOT }
+				534 = { add_core_of = ROOT }
+				282 = { add_core_of = ROOT }
+				533 = { add_core_of = ROOT }
+				536 = { add_core_of = ROOT }
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+			}
+		}
+}

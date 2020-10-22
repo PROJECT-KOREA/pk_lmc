@@ -1,0 +1,11 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            GGJ = {
+	  country_event = {
+          id = ggj.2
+          days = 10
+                  }
+            }
+        }
+    }

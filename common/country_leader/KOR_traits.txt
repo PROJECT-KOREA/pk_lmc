@@ -1,0 +1,38 @@
+leader_traits = {
+
+	traits_yi_un = {
+		random = no
+		political_power_cost = 0.5
+		}
+	
+	traits_yi_un1 = {
+		random = no
+		political_power_gain = 0.5
+		}
+		
+	traits_emperor_yi_un = {
+		random = no
+		}
+	
+	traits_yi_kang = {
+		random = no
+		political_power_gain = 0.5
+		}
+	
+	traits_yi_woo = {
+		random = no
+		political_power_gain = 0.5
+		}
+	
+	traits_kim_koo = {
+		random = no
+		}
+	
+	traits_syngman_rhee = {
+		random = no
+		}
+	
+	traits_joungchuwon = {
+		random = no
+		}
+}

@@ -1,0 +1,45 @@
+﻿capital = 282
+
+OOB = "GGJ_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+set_convoys = 5
+
+create_country_leader = {
+	name = "이건 총독"
+	desc = "POLITICS_YI_GUN_DESC"
+	picture = "gfx/leaders/GGJ/JAP_yi_gun.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+}
+
+####총독부 장군####
+create_field_marshal = {
+  name = "이건"
+  picture = "JAP_yi_gun.dds"
+  traits = { politically_connected
+			 cavalry_officer
+			 }
+  skill = 2
+
+  attack_skill = 6
+  defense_skill = 5
+  planning_skill = 3
+  logistics_skill = 5
+}

@@ -1,0 +1,573 @@
+focus_tree = {
+	id = LMC_korea
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CKR
+		}
+	}
+	default = no
+	focus = {
+		id = CK_rebuild_nation
+		icon = GFX_focus_generic_soviet_politics
+		cost = 5.00
+		completion_reward = {
+			add_political_power = 100
+			remove_ideas = KOR_joungchuone
+		}
+		x = 16
+		y = 0
+
+	}
+	focus = {
+		id = CK_problem_comme
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5.00
+		prerequisite = {
+			focus = CK_rebuild_nation
+		}
+		completion_reward = {
+				add_stability = -0.05
+			}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = CK_seoul_commune
+		icon = GFX_focus_fra_french_union
+		cost = 5.00
+		prerequisite = {
+			focus = CK_problem_comme
+		}
+		mutually_exclusive = {
+			focus = CK_communism_party
+			focus = CK_workers_party
+			focus = CK_communism_party
+		}
+		completion_reward = {
+				set_cosmetic_tag = KOR_GREATER_COMME
+				set_politics = { ruling_party = communism elections_allowed = no }
+				add_stability = 0.05
+				set_party_name = {
+				ideology = communism
+				long_name = KOR_joeson_commune_party
+				name = KOR_commune_party
+				}
+			create_country_leader = {
+				name = "유자명"
+				desc = "POLITICS_ryu_ja_meog_desc"
+				picture = "gfx/leaders/KOR/Portrait_ryu_ja_meog.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+			}
+			remove_ideas = KOR_korean_bongchan_conflict
+		}
+		
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = CK_5th_international
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 5.00
+		prerequisite = {
+			focus = CK_seoul_commune
+		}
+		completion_reward = {
+			set_rule = { can_create_factions = yes } 
+			create_faction = KOR_5TH_INTERNATIONAL
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = CK_french_rev
+		icon = GFX_focus_attack_france
+		cost = 5.00
+		prerequisite = {
+			focus = CK_5th_international
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FRA
+			}
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = CK_uk_rev
+		icon = GFX_focus_attack_britain
+		cost = 5.00
+		prerequisite = {
+			focus = CK_5th_international
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG
+			}
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = CK_communism_party
+		icon = GFX_focus_generic_join_comintern
+		cost = 5.00
+		prerequisite = {
+			focus = CK_problem_comme
+		}
+		mutually_exclusive = {
+			focus = CK_seoul_commune
+			focus = CK_workers_party
+			focus = CK_workers_party
+			focus = CK_seoul_commune
+		}
+		completion_reward = {
+				set_cosmetic_tag = KOR_COMMUNISM
+				set_politics = { ruling_party = communism elections_allowed = no }
+				add_stability = 0.05
+				set_party_name = {
+				ideology = communism
+				long_name = KOR_joeson_comme_party
+				name = KOR_comme_party
+				}
+			create_country_leader = {
+				name = "허헌 령도자"
+				desc = "POLITICS_gh_ghun_desc"
+				picture = "gfx/leaders/KOR/Portrait_gh_ghun.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+			}
+			remove_ideas = KOR_korean_bongchan_conflict
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = CK_own_faction
+		icon = GFX_focus_eng_crush_the_dream
+		cost = 5.00
+		prerequisite = {
+			focus = CK_communism_party
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = CK_american_commune
+		icon = GFX_focus_attack_usa
+		cost = 5.00
+		prerequisite = {
+			focus = CK_own_faction
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = USA
+			}
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = CK_2nd_soviet_rev
+		icon = GFX_focus_attack_soviet
+		cost = 5.00
+		prerequisite = {
+			focus = CK_own_faction
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = CK_workers_party
+		icon = GFX_goal_support_communism
+		cost = 5.00
+		prerequisite = {
+			focus = CK_problem_comme
+		}
+		mutually_exclusive = {
+			focus = CK_seoul_commune
+			focus = CK_communism_party
+			focus = CK_seoul_commune
+			focus = CK_communism_party
+		}
+		completion_reward = {
+				set_cosmetic_tag = KOR_SOVIET
+				set_politics = { ruling_party = communism elections_allowed = no }
+				add_stability = 0.05
+				set_party_name = {
+				ideology = communism
+				long_name = KOR_joeson_soviet_party
+				name = KOR_soviet_party
+				}
+			create_country_leader = {
+				name = "박헌영 서기장"
+				desc = "POLITICS_pack_hun_young_desc"
+				picture = "gfx/leaders/KOR/Portrait_pack_hun_young.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+			}
+			remove_ideas = KOR_korean_bongchan_conflict
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = CK_join_soviet
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 5.00
+		prerequisite = {
+			focus = CK_workers_party
+		}
+		available = {
+			NOT = {
+				is_in_faction_with = SOV
+			}
+		}
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					SOV = {
+						is_faction_leader = yes
+						has_government = communism
+					}
+				}
+				SOV = {
+					country_event = generic.2
+				}
+			}
+			else_if = {
+				limit = {
+					SOV = {
+						is_in_faction = yes
+						is_faction_leader = no
+						has_government = communism
+					}
+				}
+				random_country = {
+					limit = {
+						is_in_faction_with = SOV
+						is_faction_leader = yes
+					}
+					country_event = generic.2
+				}
+			}
+			else_if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				SOV = {
+					country_event = generic.5
+				}
+			}
+			else = {
+				set_rule = {
+					can_create_factions = yes
+				}
+				create_faction = FKR_the_new_international
+				SOV = {
+					country_event = generic.5
+				}
+			}
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = CK_china_rev
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		cost = 5.00
+		prerequisite = {
+			focus = CK_join_soviet
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = CHI
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YUN
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GXC
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SHX
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIK
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = XSM
+			}
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = CK_german_rev
+		icon = GFX_focus_attack_germany
+		cost = 5.00
+		prerequisite = {
+			focus = CK_join_soviet
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = CK_reform_military
+		icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
+		cost = 5.00
+		prerequisite = {
+			focus = CK_rebuild_nation
+		}
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = CK_partizan_military
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = CK_reform_military
+		}
+		completion_reward = {
+			add_manpower = 50000
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = CK_red_navy
+		icon = GFX_focus_generic_destroyer
+		cost = 5.00
+		prerequisite = {
+			focus = CK_reform_military
+		}
+		completion_reward = {
+			802 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			remove_ideas = KOR_the_london_naval_treaty 
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = CK_marine
+		icon = GFX_focus_focus_fra_national_resistance_council
+		cost = 5.00
+		prerequisite = {
+			focus = CK_red_navy
+		}
+		prerequisite = {
+			focus = CK_partizan_military
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = KOR_marine_corps
+				bonus = 1.0
+				uses = 2
+				category = marine_tech	
+			}
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = CK_red_af
+		icon = GFX_focus_chi_flying_tigers
+		cost = 5.00
+		prerequisite = {
+			focus = CK_reform_military
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				bonus = 0.35
+				ahead_reduction = 1
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.25
+				uses = 3
+				category = air_doctrine
+			}
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = CK_aircraft_carrier
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 5.00
+		prerequisite = {
+			focus = CK_red_af
+		}
+		prerequisite = {
+			focus = CK_red_navy
+		}
+		completion_reward = {
+			navy_experience = 5
+			802 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes	
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.35
+				ahead_reduction = 1
+				uses = 2
+				category = cv_tech
+			}
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = CK_nuke_research
+		icon = GFX_focus_wonderweapons
+		cost = 5.00
+		prerequisite = {
+			focus = CK_aircraft_carrier
+		}
+		prerequisite = {
+			focus = CK_marine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = KOR_atomic_armaments
+				bonus = 0.5
+				uses = 2
+				category = nuclear
+			}
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = CK_westen_commun
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		cost = 5.00
+		prerequisite = {
+			focus = CK_uk_rev
+		}
+		prerequisite = {
+			focus = CK_french_rev
+		}
+		completion_reward = {
+		FRA = { add_opinion_modifier = { target = ROOT modifier = in_faction } }
+		ENG = { add_opinion_modifier = { target = ROOT modifier = in_faction } }
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = CK_central_power
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 5.00
+		prerequisite = {
+			focus = CK_2nd_soviet_rev
+		}
+		prerequisite = {
+			focus = CK_american_commune
+		}
+		completion_reward = {
+		SOV = { add_opinion_modifier = { target = ROOT modifier = in_faction } }
+		USA = { add_opinion_modifier = { target = ROOT modifier = in_faction } }
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = CK_world_union
+		icon = GFX_focus_ger_great_red_menace
+		cost = 5.00
+		prerequisite = {
+			focus = CK_german_rev
+		}
+		prerequisite = {
+			focus = CK_china_rev
+		}
+		completion_reward = {
+			custom_effect_tooltip = KOR_time_to_reaching_top_tt
+		}
+		x = 15
+		y = 5
+
+	}
+}
